@@ -49,10 +49,12 @@
     {digitalData.event.length = 0;
     }
     digitalData.event.push({
+        event:{
           category: 'test categpry',
           action: 'test action',
           label: 'test label',
           value: 'test value'
+        },
     }
     )
     satellite.track('vue_master_pageview')
