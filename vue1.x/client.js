@@ -6,7 +6,7 @@ $(function(){
 });
 
 $(function(){
-    $('.link1').click(function () {
+    $('.link2').click(function () {
         window.digitalData.newEvent2({});
         console.log('datalayer pushed');
     });
