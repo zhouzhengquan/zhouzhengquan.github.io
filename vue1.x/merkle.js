@@ -12,7 +12,7 @@ window.digitalData.eventHandler1 = function () {
 window.digitalData.eventHandler1();
 
 window.digitalData.newEvent2 = function () {
-    $(window).trigger('CustomTagEvent1');    
+    $(window).trigger('CustomTagEvent2');    
 };
 
 window.digitalData.eventHandler2 = function () {
