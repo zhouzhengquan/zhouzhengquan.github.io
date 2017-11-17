@@ -1,8 +1,8 @@
 swagger: '2.0'
 info:
-  description: This is a sample server Retail server.
+  description: This is a sample for recommendation system.
   version: 1.0.0
-  title: Swagger Retail
+  title: Recommendation System Demo
   contact:
     name: Merkle inc.
     email: zzhou@merkleinc.com
