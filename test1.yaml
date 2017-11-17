@@ -59,6 +59,7 @@ definitions:
       id:
         type: integer
         format: int64
+        example:134455
   Products:
     type: array
     items:
