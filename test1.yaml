@@ -29,14 +29,8 @@ paths:
           description: A List of Products
           schema:
             $ref: '#/definitions/Products'
-        '400':
-          description: Bad Request
-        '403':
-          description: Forbidden
         '404':
           description: Page not found
-        '500':
-          description: Gateway Timeout
 securityDefinitions:
   api_key:
     type: apiKey
