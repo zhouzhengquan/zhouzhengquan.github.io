@@ -1,0 +1,86 @@
+swagger: '2.0'
+info:
+  description: This is a sample server Retail server.
+  version: 1.0.0
+  title: Swagger Retail
+  contact:
+    name: Merkle inc.
+    email: zzhou@merkleinc.com
+host: '192.168.1.124:5678'
+schemes:
+  - http
+paths:
+  /product:
+    get:
+      tags:
+        - Recommendation Product List
+      summary: Show Product List
+      description: returns recommendation product list
+      operationId: getProductList
+      produces:
+        - application/json
+      parameters:
+        - name: productID
+          in: query
+          description: ID of product returned
+          type: integer
+      responses:
+        '200':
+          description: A List of Products
+          schema:
+            $ref: '#/definitions/Products'
+        '400':
+          description: Bad Request
+        '403':
+          description: Forbidden
+        '404':
+          description: Page not found
+        '500':
+          description: Gateway Timeout
+securityDefinitions:
+  api_key:
+    type: apiKey
+    name: api_key
+    in: header
+    description: This is another description
+  productstore_auth:
+    type: oauth2
+    description: This is a standard oauth flow
+    authorizationUrl: 'http://productstore.swagger.io/api/oauth/dialog'
+    flow: implicit
+    scopes:
+      write_products: modify products in your account
+      read_products: read your products
+definitions:
+  Category:
+    type: object
+    properties:
+      name:
+        type: string
+        description: The name of the category
+        minLength: 0
+        maxLength: 255
+        default: Undefined
+        example: Women
+  Product:
+    required:
+      - id
+    properties:
+      id:
+        type: integer
+        format: int64
+      category:
+        $ref: '#/definitions/Category'
+      name:
+        type: string
+        example: shoe
+      status:
+        type: string
+        description: 'product status in the store,'
+        enum:
+          - Sold Out
+          - In Sale
+  Products:
+    type: array
+    items:
+      $ref: '#/definitions/Product'
