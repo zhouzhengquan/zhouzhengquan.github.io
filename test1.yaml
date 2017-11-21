@@ -6,11 +6,11 @@ info:
   contact:
     name: Merkle inc.
     email: zzhou@merkleinc.com
-host: '192.168.1.124:5678'
+host: 'ikea.com'
 schemes:
   - http
 paths:
-  /product:
+  /recom:
     get:
       tags:
         - Recommendation Product List
@@ -20,15 +20,15 @@ paths:
       produces:
         - application/json
       parameters:
-        - name: productID
+        - name: productCategory
           in: query
-          description: ID of product returned
-          type: integer
+          description: return recommended products 
+          type: string
       responses:
         '200':
           description: A List of Products
           schema:
-            $ref: '#/definitions/Products'
+            $ref: '#/definitions/Product'
         '404':
           description: Page not found
 securityDefinitions:
@@ -46,15 +46,26 @@ securityDefinitions:
       write_products: modify products in your account
       read_products: read your products
 definitions:
-  Product:
-    required:
-      - id
+  recommendList:
     properties:
-      id:
+      productID:
         type: integer
         format: int64
         example: 134455
-  Products:
-    type: array
-    items:
-      $ref: '#/definitions/Product'
+  complementaryList:
+    properties:
+      productID:
+        type: integer
+        format: int64
+        example: 934455
+  Product:
+    properties:
+      recommendList:
+        type: array
+        items:
+          $ref: '#/definitions/recommendList'
+      complementaryList:
+        type: array
+        items:
+          $ref: '#/definitions/complementaryList'
+
