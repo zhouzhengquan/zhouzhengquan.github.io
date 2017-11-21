@@ -1,12 +1,9 @@
 swagger: '2.0'
 info:
-  description: This is a sample for recommendation system.
-  version: 1.0.0
-  title: Recommendation System Demo
-  contact:
-    name: Merkle inc.
-    email: zzhou@merkleinc.com
-host: 'ikea.com'
+  description: This is API definition for Merkle recommendation system
+  version: 2.1.0
+  title: Merkle Recommendation System API
+host: ikea.com
 schemes:
   - http
 paths:
@@ -14,7 +11,7 @@ paths:
     get:
       tags:
         - Recommendation Product List
-      summary: Show Product List
+      summary: Show recommendation product list
       description: returns recommendation product list
       operationId: getProductList
       produces:
@@ -22,11 +19,11 @@ paths:
       parameters:
         - name: productCategory
           in: query
-          description: return recommended products 
+          description: pass product category
           type: string
       responses:
         '200':
-          description: A List of Products
+          description: A list of recoomendation products
           schema:
             $ref: '#/definitions/Product'
         '404':
@@ -46,26 +43,19 @@ securityDefinitions:
       write_products: modify products in your account
       read_products: read your products
 definitions:
-  recommendList:
-    properties:
-      productID:
-        type: integer
-        format: int64
-        example: 134455
-  complementaryList:
-    properties:
-      productID:
-        type: integer
-        format: int64
-        example: 934455
   Product:
     properties:
       recommendList:
-        type: array
-        items:
-          $ref: '#/definitions/recommendList'
+        type: object
+        example:
+          - productID: 134455
+          - productID: 234524
+          - productID: 192995
+          - productID: 199595
       complementaryList:
-        type: array
-        items:
-          $ref: '#/definitions/complementaryList'
-
+        type: object
+        example:
+          - productID: 934455
+          - productID: 134524
+          - productID: 144995
+          - productID: 109595
