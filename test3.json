@@ -1,0 +1,104 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "This is a sample for recommendation system.",
+    "version": "1.0.0",
+    "title": "Recommendation System Demo",
+    "contact": {
+      "name": "Merkle inc.",
+      "email": "zzhou@merkleinc.com"
+    }
+  },
+  "host": "ikea.com",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/recom": {
+      "get": {
+        "tags": [
+          "Recommendation Product List"
+        ],
+        "summary": "Show Product List",
+        "description": "returns recommendation product list",
+        "operationId": "getProductList",
+        "produces": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "name": "productCategory",
+            "in": "query",
+            "description": "return recommended products",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A List of Products",
+            "schema": {
+              "$ref": "#/definitions/Product"
+            }
+          },
+          "404": {
+            "description": "Page not found"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "api_key",
+      "in": "header",
+      "description": "This is another description"
+    },
+    "productstore_auth": {
+      "type": "oauth2",
+      "description": "This is a standard oauth flow",
+      "authorizationUrl": "http://productstore.swagger.io/api/oauth/dialog",
+      "flow": "implicit",
+      "scopes": {
+        "write_products": "modify products in your account",
+        "read_products": "read your products"
+      }
+    }
+  },
+  "definitions": {
+    "recommendList": {
+      "properties": {
+        "productID": {
+          "type": "integer",
+          "format": "int64",
+          "example": 134455
+        }
+      }
+    },
+    "complementaryList": {
+      "properties": {
+        "productID": {
+          "type": "integer",
+          "format": "int64",
+          "example": 934455
+        }
+      }
+    },
+    "Product": {
+      "properties": {
+        "recommendList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/recommendList"
+          }
+        },
+        "complementaryList": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/complementaryList"
+          }
+        }
+      }
+    }
+  }
+}
