@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>用户路径分析</title>
+  </style>
+
+  <script src="echarts.js"></script>
+  <script src="TreeGraph.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+
+
+</head>
+
+<body>
+  <div  style="padding-top:20px;padding-left:800px;">
+    <input type="text" id="txt" list="pageIDList"  />
+    <input id="control" type="button" 
+    value="输入想要查询的页面ID" onclick=" createTreeV(myChart, '用户路径分析（测试）', zNodes,Cmd)"
+    />
+    <datalist id="pageIDList">  
+        <option value="0">  
+        <option value="1001">  
+        <option value="1002">  
+        <option value="2002">  
+        <option value="2003">  
+    </datalist>  
+  </div>
+  <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+  <div style="padding:20px;width:100%;height:100%;">
+
+    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
+    <div id="main" style="width: 80%;height:80%;">
+    </div>
+    <script type="text/javascript">
+      //data    
+      var zNodes = [
+        //userid=1--user path
+        { id: 0,  name: 'Start'},
+        { id: 1001, pId: 0, name: 'A'},
+        { id: 2002, pId: 1001, name: 'B'},
+        { id: 3003, pId: 2002, name: 'C'},
+        { id: 4002, pId: 3003, name: 'D'},
+        { id: 5001, pId: 4002, name: 'E'},
+        { id: 6001, pId: 5001, name: 'F'},
+        { id: 1001, pId: 0, name: 'A'},
+        { id: 2002, pId: 1001, name: 'B'},
+        { id: 3003, pId: 2002, name: 'C'},
+        { id: 1001, pId: 0, name: 'A'},
+        { id: 2002, pId: 1001, name: 'B'},
+        { id: 1001, pId: 0, name: 'A'},
+        { id: 1001, pId: 0, name: 'A'},
+        { id: 1002, pId: 0, name: 'B'},
+        { id: 2001, pId: 1002, name: 'A'},
+        { id: 3004, pId: 2001, name: 'D'},
+        { id: 4001, pId: 3004, name: 'C'},
+        { id: 1002, pId: 0, name: 'B'},
+        { id: 2003, pId: 1002, name: 'D'},
+        { id: 3003, pId: 2003, name: 'C'},
+        { id: 1003, pId: 0, name: 'C'},
+        { id: 2003, pId: 1003, name: 'D'},
+        { id: 3001, pId: 2003, name: 'A'},
+        { id: 1003, pId: 0, name: 'C'},
+        { id: 2003, pId: 1003, name: 'D'},
+        { id: 3002, pId: 2003, name: 'B'},
+        { id: 4003, pId: 3002, name: 'E'},
+        { id: 5002, pId: 4003, name: 'F'},
+        { id: 1003, pId: 0, name: 'C'},
+        { id: 2001, pId: 1003, name: 'A'},
+        { id: 3002, pId: 2001, name: 'B'},
+        { id: 1003, pId: 0, name: 'C'},
+        { id: 2001, pId: 1003, name: 'A'},
+        { id: 3003, pId: 2001, name: 'C'},
+        { id: 1004, pId: 0, name: 'D'},
+        { id: 2004, pId: 1004, name: 'E'},
+        { id: 3001, pId: 2004, name: 'A'},
+      ]
+      data = getData(zNodes)
+
+          //createTreeVI(myChart,"用户路径分析（测试）",zNodes)
+    </script>
+  </div>
+        
+  <div id="pathflow" >
+      <script type="text/javascript">
+          var myChart = echarts.init(document.getElementById("main"), "macarons");
+        </script>
+
+    </div>
+</body>
+
+</html>
