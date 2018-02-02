@@ -1,0 +1,13 @@
+path
+"A,B,C,D,E,F"
+"A,B,C"
+"A,B"
+A
+A
+"B,A,D,C"
+"B,D,C"
+"C,D,A"
+"C,D,B,E,F"
+"C,A,B"
+"C,A,C"
+"D,E,A,F"
