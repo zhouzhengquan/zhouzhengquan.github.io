@@ -18,50 +18,10 @@
     <body>
     
         <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    <div id="main1" style="width: 80%;height:50%;">
-  <script type="text/javascript">          
-    var myChart = echarts.init(document.getElementById("main1"));
-    $.get('sankey.json', function (data) {
-        
-            myChart.setOption(option = {
-                title: {
-                    text: 'Sankey Diagram'
-                },
-                tooltip: {
-                    trigger: 'item',
-                    triggerOn: 'mousemove'
-        
-                },
-                series: [
-                    {
-                        type: 'sankey',
-                        layout:'none',
-                        data: data.nodes,
-                        links: data.links,
-                        itemStyle: {
-                            normal: {
-                                borderWidth: 1,
-                                borderColor: '#aaa'
-                            }
-                        },
-                        lineStyle: {
-                            normal: {
-                                curveness: 0.5
-                            }
-                        }
-                    }
-                ]
-            });
-        });
-            </script>
-    </div>      
-    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    <div id="main" style="width: 80%;height:50%;">
-
 
 <script type="text/javascript">          
     var myChart = echarts.init(document.getElementById("main"));
-    $.get('out.json', function (data) {
+    $.get('sankey.json', function (data) {
         
             myChart.setOption(option = {
                 title: {
