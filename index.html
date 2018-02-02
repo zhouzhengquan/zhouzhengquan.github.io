@@ -7,6 +7,7 @@
     
 
       <script src="sankey.js"></script>
+          <script src="out.js"></script>
       <script src="https://code.jquery.com/jquery-latest.js"></script>
       <script src="echarts.js"></script>
           <script src="sankey.json"></script>
@@ -20,7 +21,7 @@
         <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
     <div id="main1" style="width: 80%;height:50%;">
   <script type="text/javascript">          
-    var myChart = echarts.init(document.getElementById("mai1"));
+    var myChart = echarts.init(document.getElementById("main1"));
     $.get('sankey.json', function (data) {
         
             myChart.setOption(option = {
