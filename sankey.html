@@ -1,64 +1,66 @@
 <html>
+        
+        <head>
+          <meta charset="UTF-8">
+          <title>桑基图</title>
+          </style>
+        
     
-    <head>
-      <meta charset="UTF-8">
-      <title>桑基图</title>
-      </style>
-    
-
-      <!-- <script src="sankey.js"></script> -->
-      <script src="http://code.jquery.com/jquery-latest.js"></script>
-      <script src="echarts.js"></script>
-    
-    
-    </head>
-    
-    <body>
+          <script src="sankey.js"></script>
+          <script src="https://code.jquery.com/jquery-latest.js"></script>
+          <script src="echarts.js"></script>
+              <script src="sankey.json"></script>
+        
+        
+        </head>
+        
+        <body>
+        
+            <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
     
         <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-
-    <!-- 为 ECharts 准备一个具备大小（宽高）的 DOM -->
-    <div id="main" style="width: 80%;height:80%;">
-
-
-<script type="text/javascript">          
-    var myChart = echarts.init(document.getElementById("main"));
-    $.get('sankey.json', function (data) {
-        
-            myChart.setOption(option = {
-                title: {
-                    text: 'Sankey Diagram'
-                },
-                tooltip: {
-                    trigger: 'item',
-                    triggerOn: 'mousemove'
-        
-                },
-                series: [
-                    {
-                        type: 'sankey',
-                        layout:'none',
-                        data: data.nodes,
-                        links: data.links,
-                        itemStyle: {
-                            normal: {
-                                borderWidth: 1,
-                                borderColor: '#aaa'
-                            }
-                        },
-                        lineStyle: {
-                            normal: {
-                                curveness: 0.5
+        <div id="main" style="width: 80%;height:80%;">
+    
+    
+    <script type="text/javascript">          
+        var myChart = echarts.init(document.getElementById("main"));
+        $.get('out.json', function (data) {
+            
+                myChart.setOption(option = {
+                    title: {
+                        text: 'Sankey Diagram'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        triggerOn: 'mousemove'
+            
+                    },
+                    series: [
+                        {
+                            type: 'sankey',
+                            layout:'none',
+                            data: data.nodes,
+                            links: data.links,
+                            itemStyle: {
+                                normal: {
+                                    borderWidth: 1,
+                                    borderColor: '#aaa'
+                                }
+                            },
+                            lineStyle: {
+                                normal: {
+                                    curveness: 0.5
+                                }
                             }
                         }
-                    }
-                ]
+                    ]
+                });
             });
-        });
-            </script>
-    </div>
-
-            
-    </body>
-    <script src="echarts.js"></script>
-    </html>
+                </script>
+        </div>
+    
+                
+        </body>
+        <script src="echarts.js"></script>
+        </html>
+    
