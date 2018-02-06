@@ -1,44 +1,158 @@
-{"nodes":[{"name":"Start"},{"name":"jeep:us:shopping-tools:build-and-price:step2-pick-powertrain3"},
-{"name":"jeep:us:shopping-tools:build-and-price:step3-add-packages4"},
-{"name":"jeep:us:shopping-tools:model-compare:detailed-chart1"},
-{"name":"jeep:us:shopping-tools:build-my-own:vehicle-selector8"},
-{"name":"jeep:us:shopping-tools:build-and-price:step6-view-summary7"},
-{"name":"jeep:us:2018:grand-cherokee:landing1"},
-{"name":"jeep:us:shopping-tools:build-and-price:step5-choose-interior6"},
-{"name":"jeep:us:shopping-tools:search-new-inventory:vehicle-selector10"},
-{"name":"jeep:us:shopping-tools:search-new-inventory1"},
-{"name":"jeep:us:shopping-tools:search-new-inventory:vindetails11"},
-{"name":"jeep:us:shopping-tools:build-and-price:step1-select-model2"},
-{"name":"jeep:us:shopping-tools:model-compare:model-by-model2"},
-{"name":"jeep:us:shopping-tools:model-compare:vehicle-selector3"},
-{"name":"jeep:us:shopping-tools:search-new-inventory9"},
-{"name":"jeep:us:shopping-tools:build-and-price:step4-choose-exterior5"}],"links":[{"source":"Start","target":"jeep:us:shopping-tools:search-new-inventory:vehicle-selector10","value":"2"
+{"nodes":[{"name":"Start"},{"name":"Women14"},
+{"name":"Home1"},
+{"name":"Search Results4"},
+{"name":"Shopping Cart: Cart Details16"},
+{"name":"Email Opt-In5"},
+{"name":"Gear10"},
+{"name":"Account Registration Confirmation21"},
+{"name":"Seasonal Sale16"},
+{"name":"Product Details: Carpe Diem Backpack17"},
+{"name":"Product Details: Uintas TechX Parka12"},
+{"name":"Search Results22"},
+{"name":"Search Results10"},
+{"name":"Home8"},
+{"name":"Product Details: Grandeur Peak Hat1"},
+{"name":"Account Registration|Form20"},
+{"name":"Shopping Cart: Shipping Information7"},
+{"name":"Email Opt-In|Confirmation6"},
+{"name":"Shopping Cart: Cart Details2"},
+{"name":"Shopping Cart: Cart Details13"},
+{"name":"Search Results: No Results6"},
+{"name":"Editorial Page: Beat The Cold9"},
+{"name":"Account Registration|Form5"},
+{"name":"Search Results11"},
+{"name":"Shopping Cart: Cart Details6"},
+{"name":"Blog: Alison Parker17"},
+{"name":"Search Results9"},
+{"name":"Seasonal Sale3"},
+{"name":"Product Details: Stillwater Swim Goggles1"},
+{"name":"Product Details: Timpanogos Scarf23"},
+{"name":"Account Registration|Form13"},
+{"name":"Email Opt-In3"},
+{"name":"Gear7"},
+{"name":"Product Details: Daybreak Sunglasses4"},
+{"name":"Search Results2"},
+{"name":"Shopping Cart: Cart Details18"},
+{"name":"Search Results20"},
+{"name":"Shopping Cart: Cart Details11"},
+{"name":"Product Details: Stillwater Swim Goggles2"},
+{"name":"Editorial Page: Hit The Slopes2"},
+{"name":"Product Details: Timpanogos Scarf18"},
+{"name":"Product Details: Amasa G2 Snow Goggles5"},
+{"name":"Shopping Cart: Cart Details19"},
+{"name":"Seasonal Sale19"},
+{"name":"Search Results3"},
+{"name":"Product Details: Jordanelle Ruched One-Piece Swimsuit15"},
+{"name":"Shopping Cart: Cart Details8"},
+{"name":"Men22"},
+{"name":"Store Locator21"},
+{"name":"Editorial Page: Seasonal Sale2"},
+{"name":"Blogs12"},
+{"name":"Product Details: Inversion JS Running Shoe15"}],"links":[{"source":"Gear7","target":"Shopping Cart: Cart Details8","value":"1"
 },
-{"source":"jeep:us:shopping-tools:build-and-price:step5-choose-interior6","target":"jeep:us:shopping-tools:build-and-price:step6-view-summary7","value":"344"
+{"source":"Start","target":"Gear10","value":"1"
 },
-{"source":"jeep:us:shopping-tools:model-compare:model-by-model2","target":"jeep:us:shopping-tools:model-compare:vehicle-selector3","value":"1"
+{"source":"Women14","target":"Product Details: Jordanelle Ruched One-Piece Swimsuit15","value":"1"
 },
-{"source":"jeep:us:shopping-tools:model-compare:detailed-chart1","target":"jeep:us:shopping-tools:model-compare:model-by-model2","value":"1"
+{"source":"Shopping Cart: Shipping Information7","target":"Home8","value":"1"
 },
-{"source":"jeep:us:shopping-tools:build-and-price:step4-choose-exterior5","target":"jeep:us:shopping-tools:build-and-price:step5-choose-interior6","value":"637"
+{"source":"Shopping Cart: Cart Details8","target":"Search Results9","value":"1"
 },
-{"source":"jeep:us:shopping-tools:build-and-price:step6-view-summary7","target":"jeep:us:shopping-tools:build-my-own:vehicle-selector8","value":"55"
+{"source":"Product Details: Jordanelle Ruched One-Piece Swimsuit15","target":"Seasonal Sale16","value":"1"
 },
-{"source":"jeep:us:shopping-tools:build-my-own:vehicle-selector8","target":"jeep:us:shopping-tools:search-new-inventory9","value":"10"
+{"source":"Email Opt-In5","target":"Email Opt-In|Confirmation6","value":"1"
 },
-{"source":"jeep:us:shopping-tools:build-and-price:step2-pick-powertrain3","target":"jeep:us:shopping-tools:build-and-price:step3-add-packages4","value":"848"
+{"source":"Account Registration|Form13","target":"Women14","value":"1"
 },
-{"source":"Start","target":"jeep:us:2018:grand-cherokee:landing1","value":"8049"
+{"source":"Start","target":"Product Details: Grandeur Peak Hat1","value":"2"
 },
-{"source":"jeep:us:shopping-tools:build-and-price:step3-add-packages4","target":"jeep:us:shopping-tools:build-and-price:step4-choose-exterior5","value":"748"
+{"source":"Start","target":"Product Details: Stillwater Swim Goggles1","value":"1"
 },
-{"source":"jeep:us:shopping-tools:search-new-inventory:vehicle-selector10","target":"jeep:us:shopping-tools:search-new-inventory:vindetails11","value":"2"
+{"source":"Product Details: Daybreak Sunglasses4","target":"Email Opt-In5","value":"1"
 },
-{"source":"jeep:us:shopping-tools:build-and-price:step1-select-model2","target":"jeep:us:shopping-tools:build-and-price:step2-pick-powertrain3","value":"984"
+{"source":"Search Results11","target":"Product Details: Uintas TechX Parka12","value":"1"
 },
-{"source":"Start","target":"jeep:us:shopping-tools:model-compare:detailed-chart1","value":"48"
+{"source":"Home1","target":"Editorial Page: Hit The Slopes2","value":"10"
 },
-{"source":"Start","target":"jeep:us:shopping-tools:search-new-inventory1","value":"3674"
+{"source":"Start","target":"Shopping Cart: Cart Details11","value":"1"
 },
-{"source":"jeep:us:2018:grand-cherokee:landing1","target":"jeep:us:shopping-tools:build-and-price:step1-select-model2","value":"1131"
+{"source":"Start","target":"Search Results11","value":"1"
+},
+{"source":"Seasonal Sale3","target":"Search Results4","value":"2"
+},
+{"source":"Home8","target":"Editorial Page: Beat The Cold9","value":"1"
+},
+{"source":"Blog: Alison Parker17","target":"Product Details: Timpanogos Scarf18","value":"1"
+},
+{"source":"Product Details: Uintas TechX Parka12","target":"Shopping Cart: Cart Details13","value":"1"
+},
+{"source":"Shopping Cart: Cart Details6","target":"Shopping Cart: Shipping Information7","value":"1"
+},
+{"source":"Email Opt-In|Confirmation6","target":"Gear7","value":"1"
+},
+{"source":"Men22","target":"Product Details: Timpanogos Scarf23","value":"1"
+},
+{"source":"Start","target":"Search Results10","value":"1"
+},
+{"source":"Search Results3","target":"Product Details: Daybreak Sunglasses4","value":"1"
+},
+{"source":"Search Results4","target":"Account Registration|Form5","value":"1"
+},
+{"source":"Email Opt-In3","target":"Search Results4","value":"1"
+},
+{"source":"Product Details: Stillwater Swim Goggles2","target":"Search Results3","value":"1"
+},
+{"source":"Product Details: Grandeur Peak Hat1","target":"Shopping Cart: Cart Details2","value":"1"
+},
+{"source":"Home1","target":"Editorial Page: Seasonal Sale2","value":"30"
+},
+{"source":"Start","target":"Account Registration|Form20","value":"1"
+},
+{"source":"Store Locator21","target":"Search Results22","value":"1"
+},
+{"source":"Editorial Page: Seasonal Sale2","target":"Email Opt-In3","value":"2"
+},
+{"source":"Shopping Cart: Cart Details16","target":"Blog: Alison Parker17","value":"1"
+},
+{"source":"Product Details: Timpanogos Scarf18","target":"Shopping Cart: Cart Details19","value":"1"
+},
+{"source":"Start","target":"Account Registration Confirmation21","value":"1"
+},
+{"source":"Shopping Cart: Cart Details11","target":"Blogs12","value":"1"
+},
+{"source":"Shopping Cart: Cart Details18","target":"Seasonal Sale19","value":"1"
+},
+{"source":"Product Details: Amasa G2 Snow Goggles5","target":"Shopping Cart: Cart Details6","value":"1"
+},
+{"source":"Product Details: Stillwater Swim Goggles1","target":"Product Details: Stillwater Swim Goggles2","value":"1"
+},
+{"source":"Account Registration|Form5","target":"Search Results: No Results6","value":"1"
+},
+{"source":"Start","target":"Search Results20","value":"1"
+},
+{"source":"Blogs12","target":"Account Registration|Form13","value":"1"
+},
+{"source":"Seasonal Sale16","target":"Product Details: Carpe Diem Backpack17","value":"1"
+},
+{"source":"Account Registration Confirmation21","target":"Men22","value":"1"
+},
+{"source":"Editorial Page: Hit The Slopes2","target":"Seasonal Sale3","value":"2"
+},
+{"source":"Shopping Cart: Cart Details2","target":"Email Opt-In3","value":"1"
+},
+{"source":"Start","target":"Store Locator21","value":"1"
+},
+{"source":"Search Results4","target":"Product Details: Amasa G2 Snow Goggles5","value":"1"
+},
+{"source":"Home1","target":"Search Results2","value":"66"
+},
+{"source":"Start","target":"Home1","value":"636"
+},
+{"source":"Product Details: Inversion JS Running Shoe15","target":"Shopping Cart: Cart Details16","value":"1"
+},
+{"source":"Product Details: Carpe Diem Backpack17","target":"Shopping Cart: Cart Details18","value":"1"
+},
+{"source":"Shopping Cart: Cart Details13","target":"Women14","value":"1"
+},
+{"source":"Women14","target":"Product Details: Inversion JS Running Shoe15","value":"1"
 }]}
