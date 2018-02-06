@@ -1,85 +1,29 @@
-{"nodes":[{"name":"Start"},{"name":"Account Registration|Form13"},
-{"name":"Women14"},
-{"name":"Email Opt-In3"},
+{"nodes":[{"name":"Start"},{"name":"Store Locator: Results3"},
+{"name":"Men1"},
+{"name":"Kids2"},
+{"name":"Kids1"},
+{"name":"Store Locator2"},
+{"name":"Women2"},
 {"name":"Home1"},
-{"name":"Search Results4"},
-{"name":"Shopping Cart: Cart Details16"},
+{"name":"Search Results: No Results2"},
 {"name":"Search Results2"},
-{"name":"Search Results22"},
-{"name":"Search Results20"},
-{"name":"Search Results10"},
-{"name":"Home8"},
-{"name":"Product Details: Grandeur Peak Hat1"},
-{"name":"Shopping Cart: Cart Details11"},
-{"name":"Shopping Cart: Shipping Information7"},
-{"name":"Shopping Cart: Cart Details2"},
-{"name":"Editorial Page: Hit The Slopes2"},
-{"name":"Product Details: Timpanogos Scarf18"},
-{"name":"Product Details: Amasa G2 Snow Goggles5"},
-{"name":"Shopping Cart: Cart Details19"},
-{"name":"Search Results: No Results6"},
-{"name":"Editorial Page: Beat The Cold9"},
-{"name":"Account Registration|Form5"},
-{"name":"Shopping Cart: Cart Details6"},
-{"name":"Blog: Alison Parker17"},
-{"name":"Store Locator21"},
-{"name":"Seasonal Sale3"},
-{"name":"Blogs12"},
-{"name":"Product Details: Inversion JS Running Shoe15"}],"links":[{"source":"Search Results4","target":"Account Registration|Form5","value":"1"
+{"name":"Gear1"}],"links":[{"source":"Start","target":"Gear1","value":"138"
 },
-{"source":"Shopping Cart: Shipping Information7","target":"Home8","value":"1"
+{"source":"Store Locator2","target":"Store Locator: Results3","value":"4"
 },
-{"source":"Email Opt-In3","target":"Search Results4","value":"1"
-},
-{"source":"Product Details: Grandeur Peak Hat1","target":"Shopping Cart: Cart Details2","value":"1"
-},
-{"source":"Store Locator21","target":"Search Results22","value":"1"
-},
-{"source":"Account Registration|Form13","target":"Women14","value":"1"
-},
-{"source":"Start","target":"Product Details: Grandeur Peak Hat1","value":"2"
-},
-{"source":"Shopping Cart: Cart Details16","target":"Blog: Alison Parker17","value":"1"
-},
-{"source":"Product Details: Timpanogos Scarf18","target":"Shopping Cart: Cart Details19","value":"1"
-},
-{"source":"Shopping Cart: Cart Details11","target":"Blogs12","value":"1"
-},
-{"source":"Home1","target":"Editorial Page: Hit The Slopes2","value":"10"
-},
-{"source":"Product Details: Amasa G2 Snow Goggles5","target":"Shopping Cart: Cart Details6","value":"1"
-},
-{"source":"Start","target":"Shopping Cart: Cart Details11","value":"1"
-},
-{"source":"Account Registration|Form5","target":"Search Results: No Results6","value":"1"
-},
-{"source":"Start","target":"Search Results20","value":"1"
-},
-{"source":"Blogs12","target":"Account Registration|Form13","value":"1"
-},
-{"source":"Seasonal Sale3","target":"Search Results4","value":"2"
-},
-{"source":"Home8","target":"Editorial Page: Beat The Cold9","value":"1"
-},
-{"source":"Blog: Alison Parker17","target":"Product Details: Timpanogos Scarf18","value":"1"
-},
-{"source":"Shopping Cart: Cart Details6","target":"Shopping Cart: Shipping Information7","value":"1"
-},
-{"source":"Editorial Page: Hit The Slopes2","target":"Seasonal Sale3","value":"2"
-},
-{"source":"Shopping Cart: Cart Details2","target":"Email Opt-In3","value":"1"
-},
-{"source":"Start","target":"Search Results10","value":"1"
-},
-{"source":"Start","target":"Store Locator21","value":"1"
-},
-{"source":"Search Results4","target":"Product Details: Amasa G2 Snow Goggles5","value":"1"
+{"source":"Start","target":"Men1","value":"157"
 },
 {"source":"Home1","target":"Search Results2","value":"66"
 },
 {"source":"Start","target":"Home1","value":"636"
 },
-{"source":"Product Details: Inversion JS Running Shoe15","target":"Shopping Cart: Cart Details16","value":"1"
+{"source":"Home1","target":"Kids2","value":"43"
 },
-{"source":"Women14","target":"Product Details: Inversion JS Running Shoe15","value":"1"
+{"source":"Home1","target":"Women2","value":"49"
+},
+{"source":"Home1","target":"Store Locator2","value":"12"
+},
+{"source":"Start","target":"Kids1","value":"95"
+},
+{"source":"Home1","target":"Search Results: No Results2","value":"70"
 }]}
