@@ -1,21 +1,36 @@
-{"nodes":[{"name":"Start"},{"name":"Store Locator: Results3"},
+{"nodes":[{"name":"Start"},{"name":"Men2"},
 {"name":"Men1"},
-{"name":"Kids2"},
-{"name":"Kids1"},
-{"name":"Store Locator2"},
 {"name":"Women2"},
 {"name":"Home1"},
 {"name":"Search Results: No Results2"},
 {"name":"Search Results2"},
-{"name":"Gear1"}],"links":[{"source":"Start","target":"Gear1","value":"138"
+{"name":"Gear1"},
+{"name":"Gear2"},
+{"name":"Store Locator: Results3"},
+{"name":"Kids2"},
+{"name":"Kids1"},
+{"name":"Store Locator2"},
+{"name":"Seasonal Sale1"}],"links":[{"source":"Start","target":"Gear1","value":"138"
+},
+{"source":"Start","target":"Seasonal Sale1","value":"184"
+},
+{"source":"Gear1","target":"Store Locator2","value":"7"
 },
 {"source":"Store Locator2","target":"Store Locator: Results3","value":"4"
+},
+{"source":"Home1","target":"Gear2","value":"56"
+},
+{"source":"Store Locator2","target":"Store Locator: Results3","value":"3"
 },
 {"source":"Start","target":"Men1","value":"157"
 },
 {"source":"Home1","target":"Search Results2","value":"66"
 },
+{"source":"Home1","target":"Men2","value":"61"
+},
 {"source":"Start","target":"Home1","value":"636"
+},
+{"source":"Start","target":"Gear1","value":"44"
 },
 {"source":"Home1","target":"Kids2","value":"43"
 },
