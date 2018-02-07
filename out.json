@@ -1,157 +1,67 @@
 {"nodes":[{"name":"Start"},{"name":"Men3"},
-{"name":"Product Details: La Sal Sweatshirt9"},
-{"name":"Home1"},
-{"name":"Product Details: Wasatch Xtreme Skis4"},
-{"name":"Shopping Cart: Shipping Information6"},
-{"name":"Gear5"},
-{"name":"Product Details: Bonneville Shore Swimsuit1"},
-{"name":"Shopping Cart: Order Review8"},
-{"name":"Kids2"},
-{"name":"Store Locator: Results6"},
-{"name":"Shopping Cart: Billing Information7"},
-{"name":"Shopping Cart: Billing Information12"},
-{"name":"Search Results14"},
-{"name":"Product Details: Wasatch Xtreme Inya Face Goggles2"},
-{"name":"Store Locator10"},
-{"name":"Seasonal Sale4"},
-{"name":"Store Locator5"},
-{"name":"Men2"},
-{"name":"Product Details: UltraTech Socks4"},
-{"name":"Product Details: King Top Daypack7"},
-{"name":"Home4"},
-{"name":"Shopping Cart: Shipping Information7"},
-{"name":"Product Details: Uintas TechX Snow Pants1"},
-{"name":"Search Results5"},
-{"name":"Search Results: No Results2"},
-{"name":"Kids1"},
-{"name":"Shopping Cart: Shipping Information11"},
-{"name":"Store Locator: Results7"},
-{"name":"Shopping Cart: Cart Details6"},
-{"name":"Product Details: Timpanogos Scarf4"},
-{"name":"Women6"},
-{"name":"Product Details: Brian Head Thermal Shirt13"},
-{"name":"Seasonal Sale3"},
-{"name":"Store Locator6"},
 {"name":"Women3"},
 {"name":"Home3"},
-{"name":"Shopping Cart: Cart Details10"},
+{"name":"Home1"},
 {"name":"Order Confirmation10"},
-{"name":"Shopping Cart: Cart Details5"},
+{"name":"Product Details: Bonneville Shore Swimsuit1"},
 {"name":"Men5"},
-{"name":"Search Results2"},
-{"name":"Store Locator: Results11"},
 {"name":"Store Locator3"},
 {"name":"Store Locator: Results4"},
 {"name":"Home11"},
+{"name":"Store Locator: Results6"},
 {"name":"Search Results12"},
+{"name":"Search Results14"},
 {"name":"Product Details: Wasatch Xtreme Parka15"},
-{"name":"Product Details: King_s Peak Hat3"},
-{"name":"Product Details: Corvair Stumpjumper Mountain Bike9"},
+{"name":"Seasonal Sale4"},
+{"name":"Store Locator5"},
+{"name":"Men2"},
+{"name":"Home4"},
+{"name":"Shopping Cart: Shipping Information7"},
 {"name":"Product Details: Bonneville Shore Swimsuit2"},
-{"name":"Blog: Iris McCoy3"},
+{"name":"Search Results: No Results2"},
 {"name":"Shopping Cart: Order Review9"},
-{"name":"Search Results3"},
+{"name":"Shopping Cart: Cart Details6"},
+{"name":"Product Details: Timpanogos Scarf4"},
 {"name":"Shopping Cart: Billing Information8"},
-{"name":"Shopping Cart: Cart Details8"},
-{"name":"Product Details: King_s Peak Hat4"}],"links":[{"source":"Product Details: King Top Daypack7","target":"Shopping Cart: Cart Details8","value":"1"
+{"name":"Product Details: Brian Head Thermal Shirt13"}],"links":[{"source":"Home3","target":"Seasonal Sale4","value":"1"
 },
 {"source":"Start","target":"Product Details: Bonneville Shore Swimsuit1","value":"9"
-},
-{"source":"Start","target":"Home11","value":"1"
-},
-{"source":"Search Results5","target":"Women6","value":"1"
-},
-{"source":"Blog: Iris McCoy3","target":"Product Details: Wasatch Xtreme Skis4","value":"1"
-},
-{"source":"Start","target":"Order Confirmation10","value":"1"
-},
-{"source":"Women6","target":"Product Details: King Top Daypack7","value":"1"
-},
-{"source":"Product Details: King_s Peak Hat4","target":"Shopping Cart: Cart Details5","value":"1"
-},
-{"source":"Search Results14","target":"Product Details: Wasatch Xtreme Parka15","value":"1"
-},
-{"source":"Gear5","target":"Store Locator6","value":"1"
-},
-{"source":"Men2","target":"Store Locator3","value":"2"
-},
-{"source":"Shopping Cart: Cart Details5","target":"Shopping Cart: Shipping Information6","value":"1"
-},
-{"source":"Shopping Cart: Order Review8","target":"Product Details: La Sal Sweatshirt9","value":"1"
-},
-{"source":"Men2","target":"Home3","value":"1"
-},
-{"source":"Product Details: Wasatch Xtreme Skis4","target":"Gear5","value":"1"
-},
-{"source":"Shopping Cart: Shipping Information11","target":"Shopping Cart: Billing Information12","value":"1"
-},
-{"source":"Start","target":"Store Locator: Results11","value":"1"
-},
-{"source":"Search Results12","target":"Product Details: Brian Head Thermal Shirt13","value":"1"
-},
-{"source":"Product Details: Timpanogos Scarf4","target":"Search Results5","value":"1"
-},
-{"source":"Shopping Cart: Cart Details6","target":"Shopping Cart: Shipping Information7","value":"1"
-},
-{"source":"Product Details: King_s Peak Hat3","target":"Product Details: King_s Peak Hat4","value":"2"
-},
-{"source":"Product Details: Brian Head Thermal Shirt13","target":"Search Results14","value":"1"
-},
-{"source":"Product Details: Uintas TechX Snow Pants1","target":"Men2","value":"1"
-},
-{"source":"Home1","target":"Men2","value":"57"
-},
-{"source":"Home1","target":"Search Results: No Results2","value":"28"
-},
-{"source":"Product Details: UltraTech Socks4","target":"Shopping Cart: Cart Details5","value":"1"
-},
-{"source":"Home1","target":"Kids2","value":"36"
-},
-{"source":"Shopping Cart: Cart Details8","target":"Product Details: Corvair Stumpjumper Mountain Bike9","value":"1"
-},
-{"source":"Start","target":"Product Details: Uintas TechX Snow Pants1","value":"5"
-},
-{"source":"Kids1","target":"Search Results2","value":"5"
-},
-{"source":"Start","target":"Kids1","value":"24"
-},
-{"source":"Shopping Cart: Shipping Information6","target":"Shopping Cart: Billing Information7","value":"1"
-},
-{"source":"Start","target":"Shopping Cart: Cart Details10","value":"1"
-},
-{"source":"Home3","target":"Seasonal Sale4","value":"1"
-},
-{"source":"Store Locator6","target":"Store Locator: Results7","value":"1"
 },
 {"source":"Store Locator5","target":"Store Locator: Results6","value":"1"
 },
 {"source":"Home4","target":"Men5","value":"1"
 },
-{"source":"Men2","target":"Seasonal Sale3","value":"1"
+{"source":"Start","target":"Home11","value":"1"
 },
-{"source":"Product Details: Wasatch Xtreme Inya Face Goggles2","target":"Blog: Iris McCoy3","value":"1"
-},
-{"source":"Seasonal Sale3","target":"Product Details: Timpanogos Scarf4","value":"1"
+{"source":"Start","target":"Order Confirmation10","value":"1"
 },
 {"source":"Shopping Cart: Billing Information8","target":"Shopping Cart: Order Review9","value":"1"
 },
-{"source":"Kids2","target":"Search Results3","value":"9"
+{"source":"Search Results14","target":"Product Details: Wasatch Xtreme Parka15","value":"1"
 },
-{"source":"Start","target":"Store Locator10","value":"1"
+{"source":"Men2","target":"Store Locator3","value":"2"
 },
 {"source":"Product Details: Timpanogos Scarf4","target":"Store Locator5","value":"1"
 },
 {"source":"Search Results: No Results2","target":"Women3","value":"4"
 },
-{"source":"Shopping Cart: Billing Information7","target":"Shopping Cart: Order Review8","value":"1"
-},
 {"source":"Home11","target":"Search Results12","value":"1"
+},
+{"source":"Men2","target":"Home3","value":"1"
 },
 {"source":"Product Details: Bonneville Shore Swimsuit2","target":"Men3","value":"1"
 },
-{"source":"Start","target":"Shopping Cart: Shipping Information11","value":"1"
+{"source":"Search Results12","target":"Product Details: Brian Head Thermal Shirt13","value":"1"
+},
+{"source":"Shopping Cart: Cart Details6","target":"Shopping Cart: Shipping Information7","value":"1"
+},
+{"source":"Product Details: Brian Head Thermal Shirt13","target":"Search Results14","value":"1"
 },
 {"source":"Men3","target":"Home4","value":"1"
+},
+{"source":"Home1","target":"Men2","value":"57"
+},
+{"source":"Home1","target":"Search Results: No Results2","value":"28"
 },
 {"source":"Men5","target":"Shopping Cart: Cart Details6","value":"1"
 },
@@ -159,13 +69,7 @@
 },
 {"source":"Women3","target":"Product Details: Timpanogos Scarf4","value":"1"
 },
-{"source":"Search Results3","target":"Product Details: UltraTech Socks4","value":"1"
-},
 {"source":"Start","target":"Home1","value":"636"
-},
-{"source":"Home1","target":"Product Details: Wasatch Xtreme Inya Face Goggles2","value":"2"
-},
-{"source":"Search Results2","target":"Product Details: King_s Peak Hat3","value":"2"
 },
 {"source":"Product Details: Bonneville Shore Swimsuit1","target":"Product Details: Bonneville Shore Swimsuit2","value":"1"
 },
