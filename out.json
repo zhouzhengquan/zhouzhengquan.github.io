@@ -1,146 +1,47 @@
-{"nodes":[{"name":"Start"},{"name":"Company Information2"},
-{"name":"Product Details: King's Peak Hat3"},
-{"name":"Product Details: Rockport High-Performance Swim Trunks5"},
-{"name":"Product Details: La Sal Flannel Shirt1"},
-{"name":"Home1"},
-{"name":"Search Results4"},
-{"name":"Shopping Cart: Cart Details3"},
-{"name":"Kids2"},
-{"name":"Product Details:3"},
-{"name":"Account Registration|Form2"},
-{"name":"Seasonal Sale4"},
-{"name":"Product Details: Uintas TechX Parka2"},
-{"name":"Men2"},
-{"name":"Product Details: Burbank Hills Jeans2"},
-{"name":"Women2"},
-{"name":"Search Results5"},
-{"name":"Gear4"},
-{"name":"Store Locator2"},
-{"name":"Blog: Get Outdoors2"},
-{"name":"Seasonal Sale3"},
-{"name":"Product Details: King's Peak Hat5"},
-{"name":"Men1"},
-{"name":"Product Details: Fiery Furnace Survival Lighter3"},
+{"nodes":[{"name":"Start"},{"name":"Men1"},
 {"name":"Women3"},
 {"name":"Home3"},
-{"name":"Product Details: La Sal Sweatshirt3"},
+{"name":"Home1"},
 {"name":"Shopping Cart: Shipping Information4"},
+{"name":"Product Details: La Sal Sweatshirt3"},
+{"name":"Search Results4"},
+{"name":"Shopping Cart: Cart Details3"},
 {"name":"Product Details: Amasa G2 Snow Goggles2"},
 {"name":"Editorial Page: Beat The Cold1"},
 {"name":"Search Results2"},
 {"name":"Product Details: Bonneville Shore Swimsuit3"},
 {"name":"Store Locator3"},
 {"name":"Store Locator: Results4"},
-{"name":"Product Details: Insulrest Sleeping Pad2"},
 {"name":"Kids4"},
-{"name":"Account Registration Confirmation4"},
-{"name":"Account Registration|Form4"},
-{"name":"Editorial Page: Camping Essentials2"},
-{"name":"Seasonal Sale2"},
+{"name":"Product Details:3"},
+{"name":"Seasonal Sale4"},
 {"name":"Editorial Page: Seasonal Sale1"},
+{"name":"Product Details: Uintas TechX Parka2"},
+{"name":"Men2"},
+{"name":"Product Details: Burbank Hills Jeans2"},
 {"name":"Product Details: La Sal Sweatshirt4"},
-{"name":"Shopping Cart: Shipping Information5"},
+{"name":"Women2"},
 {"name":"Shopping Cart: Cart Details4"},
-{"name":"Product Details: Red Army Knife3"},
-{"name":"Product Details: Wasatch Xtreme Skis5"},
-{"name":"Product Details: Bonneville Shore Swimsuit2"},
-{"name":"Search Results: No Results4"},
-{"name":"Search Results3"},
 {"name":"Gear2"},
+{"name":"Search Results3"},
 {"name":"Men4"},
-{"name":"Store Locator4"},
-{"name":"Store Locator: Results5"},
-{"name":"Kids3"},
+{"name":"Store Locator2"},
 {"name":"Account Registration|Form3"},
 {"name":"Seasonal Sale1"},
 {"name":"Editorial Page: Seasonal Sale2"},
-{"name":"Seasonal Sale5"}],"links":[{"source":"Search Results2","target":"Shopping Cart: Cart Details3","value":"1"
+{"name":"Seasonal Sale3"}],"links":[{"source":"Home3","target":"Seasonal Sale4","value":"1"
 },
-{"source":"Search Results: No Results4","target":"Search Results5","value":"1"
+{"source":"Search Results2","target":"Shopping Cart: Cart Details3","value":"1"
+},
+{"source":"Home1","target":"Women2","value":"45"
+},
+{"source":"Product Details: Burbank Hills Jeans2","target":"Shopping Cart: Cart Details3","value":"1"
+},
+{"source":"Product Details: La Sal Sweatshirt3","target":"Product Details: La Sal Sweatshirt4","value":"1"
 },
 {"source":"Editorial Page: Seasonal Sale2","target":"Account Registration|Form3","value":"2"
 },
 {"source":"Seasonal Sale3","target":"Search Results4","value":"1"
-},
-{"source":"Editorial Page: Camping Essentials2","target":"Kids3","value":"4"
-},
-{"source":"Product Details: La Sal Flannel Shirt1","target":"Blog: Get Outdoors2","value":"1"
-},
-{"source":"Home1","target":"Editorial Page: Camping Essentials2","value":"31"
-},
-{"source":"Home1","target":"Product Details: Insulrest Sleeping Pad2","value":"2"
-},
-{"source":"Search Results3","target":"Search Results4","value":"4"
-},
-{"source":"Home1","target":"Gear2","value":"53"
-},
-{"source":"Editorial Page: Beat The Cold1","target":"Search Results2","value":"3"
-},
-{"source":"Home1","target":"Search Results2","value":"58"
-},
-{"source":"Men2","target":"Store Locator3","value":"2"
-},
-{"source":"Account Registration|Form4","target":"Seasonal Sale5","value":"1"
-},
-{"source":"Men2","target":"Home3","value":"1"
-},
-{"source":"Start","target":"Editorial Page: Beat The Cold1","value":"8"
-},
-{"source":"Product Details:3","target":"Shopping Cart: Cart Details4","value":"8"
-},
-{"source":"Product Details: Fiery Furnace Survival Lighter3","target":"Shopping Cart: Cart Details4","value":"1"
-},
-{"source":"Product Details: Insulrest Sleeping Pad2","target":"Account Registration|Form3","value":"1"
-},
-{"source":"Account Registration|Form3","target":"Kids4","value":"1"
-},
-{"source":"Store Locator2","target":"Search Results3","value":"2"
-},
-{"source":"Product Details: Bonneville Shore Swimsuit3","target":"Shopping Cart: Cart Details4","value":"1"
-},
-{"source":"Start","target":"Editorial Page: Seasonal Sale1","value":"13"
-},
-{"source":"Product Details: King's Peak Hat3","target":"Shopping Cart: Cart Details4","value":"1"
-},
-{"source":"Home1","target":"Men2","value":"57"
-},
-{"source":"Home1","target":"Kids2","value":"36"
-},
-{"source":"Account Registration|Form3","target":"Men4","value":"1"
-},
-{"source":"Search Results2","target":"Product Details: Bonneville Shore Swimsuit3","value":"1"
-},
-{"source":"Search Results3","target":"Search Results: No Results4","value":"1"
-},
-{"source":"Shopping Cart: Cart Details3","target":"Shopping Cart: Shipping Information4","value":"1"
-},
-{"source":"Seasonal Sale1","target":"Product Details: Burbank Hills Jeans2","value":"4"
-},
-{"source":"Search Results2","target":"Product Details: Red Army Knife3","value":"1"
-},
-{"source":"Home3","target":"Seasonal Sale4","value":"1"
-},
-{"source":"Home1","target":"Women2","value":"45"
-},
-{"source":"Shopping Cart: Cart Details4","target":"Shopping Cart: Shipping Information5","value":"1"
-},
-{"source":"Home1","target":"Product Details: Bonneville Shore Swimsuit2","value":"3"
-},
-{"source":"Product Details: King's Peak Hat3","target":"Gear4","value":"1"
-},
-{"source":"Blog: Get Outdoors2","target":"Product Details: King's Peak Hat3","value":"1"
-},
-{"source":"Product Details: Burbank Hills Jeans2","target":"Shopping Cart: Cart Details3","value":"1"
-},
-{"source":"Shopping Cart: Cart Details4","target":"Shopping Cart: Shipping Information5","value":"5"
-},
-{"source":"Product Details: La Sal Sweatshirt3","target":"Product Details: La Sal Sweatshirt4","value":"1"
-},
-{"source":"Gear4","target":"Product Details: King's Peak Hat5","value":"1"
-},
-{"source":"Home1","target":"Seasonal Sale2","value":"28"
-},
-{"source":"Home1","target":"Company Information2","value":"7"
 },
 {"source":"Home1","target":"Editorial Page: Seasonal Sale2","value":"30"
 },
@@ -148,25 +49,17 @@
 },
 {"source":"Seasonal Sale1","target":"Product Details: Uintas TechX Parka2","value":"4"
 },
-{"source":"Account Registration|Form3","target":"Account Registration Confirmation4","value":"1"
-},
-{"source":"Shopping Cart: Cart Details4","target":"Seasonal Sale5","value":"1"
-},
-{"source":"Women3","target":"Store Locator4","value":"1"
-},
 {"source":"Product Details: Amasa G2 Snow Goggles2","target":"Store Locator3","value":"1"
+},
+{"source":"Home1","target":"Gear2","value":"53"
 },
 {"source":"Men1","target":"Store Locator2","value":"4"
 },
 {"source":"Search Results3","target":"Kids4","value":"1"
 },
-{"source":"Product Details: Bonneville Shore Swimsuit2","target":"Account Registration|Form3","value":"1"
+{"source":"Editorial Page: Beat The Cold1","target":"Search Results2","value":"3"
 },
-{"source":"Kids2","target":"Product Details: Fiery Furnace Survival Lighter3","value":"1"
-},
-{"source":"Account Registration|Form2","target":"Search Results3","value":"1"
-},
-{"source":"Women2","target":"Product Details: King's Peak Hat3","value":"1"
+{"source":"Men2","target":"Store Locator3","value":"2"
 },
 {"source":"Store Locator3","target":"Store Locator: Results4","value":"1"
 },
@@ -174,45 +67,41 @@
 },
 {"source":"Editorial Page: Seasonal Sale1","target":"Search Results2","value":"6"
 },
-{"source":"Search Results2","target":"Product Details: La Sal Sweatshirt3","value":"1"
-},
 {"source":"Shopping Cart: Cart Details3","target":"Seasonal Sale4","value":"1"
-},
-{"source":"Seasonal Sale1","target":"Account Registration|Form2","value":"2"
-},
-{"source":"Store Locator4","target":"Store Locator: Results5","value":"1"
 },
 {"source":"Product Details: Uintas TechX Parka2","target":"Seasonal Sale3","value":"1"
 },
-{"source":"Product Details: La Sal Sweatshirt3","target":"Account Registration|Form4","value":"1"
+{"source":"Men2","target":"Home3","value":"1"
 },
 {"source":"Women3","target":"Kids4","value":"1"
 },
-{"source":"Company Information2","target":"Women3","value":"2"
+{"source":"Start","target":"Editorial Page: Beat The Cold1","value":"8"
 },
-{"source":"Start","target":"Product Details: La Sal Flannel Shirt1","value":"4"
-},
-{"source":"Search Results4","target":"Product Details: Wasatch Xtreme Skis5","value":"1"
+{"source":"Store Locator2","target":"Search Results3","value":"2"
 },
 {"source":"Gear2","target":"Product Details:3","value":"18"
 },
 {"source":"Start","target":"Seasonal Sale1","value":"93"
 },
-{"source":"Kids4","target":"Product Details: Rockport High-Performance Swim Trunks5","value":"1"
+{"source":"Product Details: Bonneville Shore Swimsuit3","target":"Shopping Cart: Cart Details4","value":"1"
 },
-{"source":"Kids3","target":"Store Locator4","value":"1"
+{"source":"Start","target":"Editorial Page: Seasonal Sale1","value":"13"
 },
-{"source":"Product Details: Red Army Knife3","target":"Shopping Cart: Cart Details4","value":"1"
+{"source":"Home1","target":"Men2","value":"57"
+},
+{"source":"Account Registration|Form3","target":"Men4","value":"1"
+},
+{"source":"Search Results2","target":"Product Details: Bonneville Shore Swimsuit3","value":"1"
+},
+{"source":"Shopping Cart: Cart Details3","target":"Shopping Cart: Shipping Information4","value":"1"
 },
 {"source":"Start","target":"Home1","value":"636"
 },
-{"source":"Seasonal Sale2","target":"Search Results3","value":"10"
+{"source":"Seasonal Sale1","target":"Product Details: Burbank Hills Jeans2","value":"4"
 },
 {"source":"Women2","target":"Product Details: La Sal Sweatshirt3","value":"1"
 },
 {"source":"Product Details:3","target":"Search Results4","value":"2"
-},
-{"source":"Account Registration Confirmation4","target":"Seasonal Sale5","value":"1"
 },
 {"source":"Store Locator3","target":"Store Locator: Results4","value":"2"
 },
