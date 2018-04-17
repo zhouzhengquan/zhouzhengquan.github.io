@@ -1,27 +1,1270 @@
-<html>
 
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
+<meta charset="utf-8" />
+<meta name="author" content="" />
+<meta
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+	name="viewport" />
+<!-- 避免IE使用兼容模式 -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<!-- windows phone 点击无高光 -->
+<meta name="msapplication-tap-highlight" content="no" />
+<!-- 启用360浏览器的极速模式(webkit) -->
+<meta name="renderer" content="webkit" />
+<meta name="MobileOptimized" content="320" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta content="telephone=no" name="format-detection" />
+<title>Levi's中国官方网站</title>
+<meta name="description" content="Levi’s自1873年由Levi Strauss创立以来，演绎了150年的牛王神话，以坚持不懈的开拓创新精神拓展产品系列。Levi's中国官方商城在线销售男士、女士牛仔裤等服饰。"/>
+<meta name="keywords" content="Levi's官网， Levi's牛仔裤，Levi's男装，Levi's女装"/>
+<meta name="_csrf" content="1ac82a4e-38a8-4448-800b-f40d7072bcf9" />
+
+<script type="text/javascript">
+	
+	var _contextPath = "";
+	
+	var static_base = "//image.levi.com.cn";
+	
+	var img_base = "//image.levi.com.cn/resources/";
+	
+	var default_Img = "//image.levi.com.cn/images/default.jpg";
+	var page_base = "https://www.levi.com.cn";
+	var version_image = "201804171434";
+	var version_css = "201804171434";
+	var version_js = "201804171434";
+
+	var profile = "";
+</script>
+<link rel="stylesheet" type="text/css" media="screen" href="//image.levi.com.cn/libs/spice/css/??spice.min.css,spice.icon.min.css?20180413" />
+<link rel="stylesheet" type="text/css" media="screen" href="//image.levi.com.cn/??libs/spice/js/cloudzoom/css/cloudzoom.min.css,libs/spice/js/tinyscrollbar/css/tinyscrollbar.min.css,css/bootstrap-slider.css,css/common.css?20180413" />
+<!-- 公共 CSS 部分结束 -->
+
+<!-- 公共 JS 部分开始 -->
+<script type="text/javascript" src="//image.levi.com.cn/??libs/jquery/jquery.js,libs/iscroll/iscroll.js,libs/spice/js/jquery.spice.min.js,libs/spice/js/lazyLoad/jquery.lazyLoad.min.js,libs/spice/js/kvScroll/jquery.kvScroll.min.js,libs/spice/js/dropdown/jquery.dropdown.min.js,libs/spice/js/cloudzoom/jquery.cloudzoom.min.js,libs/spice/js/tinyscrollbar/jquery.tinyscrollbar.min.js,libs/spice/js/placeholder/jquery.placeholder.min.js,libs/spice/js/starRank/jquery.starRank.min.js,js/bootstrap-slider.js,js/common.js,js/main.js,js/common/ajax-extend.js,libs/jquery/jquery.qrcode.min.js,js/common/omniture.js?201804171434"></script>
+<!-- 公共JS 部分结束 -->
+
+<link rel="shortcut icon" href="/icon.ico" type="image/x-icon" />
+<!-- omniture代码开始 -->
+<!-- omniture公共部分代码，每个页面都需要有的代码-->
+<script type="text/javascript">
+	/* pageObject */
+	var pageData=new Object();
+	pageData.solid_display="";
+	var authenticated=""?"authenticated":"guest";
+	if(!page){
+		var page=new Object();
+		
+		/* 判断登录状态 */
+		/* 判断登录平台pc,ipad,或者mobile */
+		var platform="pc";
+		var wW=$(window).width();
+		 if(wW >1024){
+			platform="pc";
+	     }else if(wW > 767 &&  wW <= 1024){
+	    	platform="tablet";
+	     }else{
+	    	 platform="mobile";
+	     }
+		 //从后台拿到的对象中获取三个字段的值
+		/* var omniturePageViewCommand=document.getElementById("pageName").value; */
+		var page_name="home > home landing > homepage";
+		var page_category="n/a";
+		var page_department="n/a";
+		var page_type="home";
+		
+		page.authenticated=authenticated; 
+		page.brand="levi";
+		page.country="cn";
+		page.currency="cny";
+		page.locale="zh_cn";
+		page.page_name=page_name;
+		page.page_category=page_category;
+		page.page_department=page_department;
+		page.page_type=page_type;
+		page.platform=platform;
+		page.section="";
+		/* 将page对象赋值给prePageData对象 */
+		pageData.page=page;
+	}
+	
+	/* Customer Object  */
+	if("authenticated"==authenticated){
+		var customer_id="";
+		var group="";
+		var account_type="";
+		if("会员"==group){
+			account_type="hybrid";
+		}else{
+			if(""=="qq"){
+				account_type="qq";
+			}
+			if(""=="alipay"){
+				account_type="alipay";
+			}
+		}
+		var customer={ 
+		    "account_type": account_type, 
+		    "customer_id": customer_id    
+		}  
+		pageData.customer=customer;
+	}
+
+	/* Email Subscription Object*/
+	var email_subscription={
+		"email_subscribed" : "",
+		"successfully_subscribed" : ""
+		}
+	pageData.email_subscription=email_subscription;
+	
+	if('/payment/paySuccess'==window.location.pathname){
+		var order_sku_list=new Array();
+		var order_subunit=new Array();
+		var order_subtotal=new Array();
+		var order_promo_code=new Array();
+		
+		var product_id=new Array();
+		var subtotal_net=new Array();
+		var pay_skustr="";
+		
+		if(order_promo_code[0]){var order_promotion_code_confirm=order_promo_code[0]}else{order_promotion_code_confirm=""}
+		var order={
+		 "order_id":"", 
+		 "order_net":"",
+		 "order_sku_list":paybarcodelist, 
+		 "order_promo_code":order_promotion_code_confirm,
+		 "order_subunit":order_subunit, 
+		 "order_subtotal":order_subtotal,
+		 "payment_method":"", 
+		 "order_discounts_sales":"",
+		 
+		 "product_id":product_id,
+		 "subtotal_net":subtotal_net
+		}  
+		pageData.order=order;
+	}
+	
+	
+</script>
+<!-- omniture代码结束 -->
+
 <script src="//assets.adobedtm.com/f876876910c5b99b1ecc6e45d02acfa5f8b6cb2f/satelliteLib-3aefd94135a5a250f7558729f47b2fb2508d0b35.js"></script>
-<title>我的第一个 HTML 页面(A/B测试B)</title>
-
-
+  <script type='text/javascript'>
+$(window).load(function(){
+	(function () {		
+		//加载gs.js
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = (location.protocol == 'https:' ? 'https://ssl.' : 'http://static.') + 'gridsumdissector.com/js/Clients/GWD-002464-FAEC60/gs.js';
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(s, firstScript);
+        
+        //加载事件的js
+        var eventJs = document.createElement('script');
+        eventJs.type = 'text/javascript';
+        eventJs.async = true;
+        eventJs.src =static_base+'/js/web-dissector/web-dissector.js?v='+version_js;
+        var secondScript = document.getElementsByTagName('script')[0];
+        secondScript.parentNode.insertBefore(eventJs, secondScript);        
+    })();
+}); 
+</script>
 </head>
-
 <body>
-<p>body (A/B测试B) 元素的内容会显示在浏览器中。</p>
-<p>title (A/B测试B) 元素的内容会显示在浏览器的标题栏中。</p>
+	<div id="wrapper">
+		<script type="text/javascript" src="//image.levi.com.cn/??js/common/component/header.js,js/jsencrypt.js?201804171434"></script>
+<div class="header-box">
 
-<div>
-<p>(A/B测试B) 层1</p>
-<div>
-<p>(A/B测试B) 层21(A/B测试B)</p>
-<p>(A/B测试B) 层22(A/B测试B)</p>
-<p>(A/B测试B) 层23(A/B测试B)</p>
+<!--招行头部
+
+-->
+
+<input type="hidden" id="loginSession" value=""/>
+<input type="hidden" id="isVisited" value="firstVisit"/>
+<input type="hidden" id="infoValue" value=""/>
+<div class="top-nav none-xs">
+	<div class="top-nav-container">
+			 
+			<p style=" line-height: 30px;color: #fff;margin:0; font-size: 12px;display: inline-block;"></p>
+			 
+			
+						<div class="top-nav-right events-top-nav-right">
+							<ul class="top-nav-right-box float-clearfix">
+							<li class="nav-plan"><a href="/landing/faq-member">LIVE IN LEVI'S<sup>® </sup>会员计划</a></li>
+							<li class="nav-plan"><span>|</span><a 
+								 href = "https://www.levi.com.cn/guest/order-search.htm">订单查询</a></li>
+							<li class="nav-login none-xs">
+									<a href="https://www.levi.com.cn/member/login">注册/登录</a>
+									<div class="header-right-submenu header-login-box">
+						
+										<div class="header-right-submenu-content">
+											<h3 class="header-login-title">登录</h3>
+											<div class="header-login-notlanding">
+												<div class="form-input">
+													<input type="tel" id="min_mobile_input" maxlength="11" placeholder="请输入您的手机号码" value=""><i
+														class="icon icon-right-grey"></i> <span class="msg-block">
+														<span>XXX</span>
+													</span>
+												</div>
+												<div class="form-input">
+													<input type="password" id="min_password_input" placeholder="请输入密码" value=""> <i
+														class="icon icon-right-grey"></i> <span class="msg-block">
+														<span>XXX</span>
+													</span>
+												</div>
+												<div class="float-clearfix">
+													<label class="events-checkbox header-rememberme"> <i
+														class="icon icon-checkbox is-active" id="min_isRememberPassword"></i>记住我
+													</label> <a href="javascript:void(0);" class="login-forget-psw header">忘记密码？</a>
+												</div>
+												<div class="login-btn">
+													<a class="btn btn-red" id="min_loign_btn">登&nbsp;&nbsp;录</a>
+												</div>
+												<div class="login-by-third-party float-clearfix">
+													<p class="login-by-third-title">第三方登录：</p>
+													<div class="login-by-third-icon">
+														<a data-width="610" data-height="500" data-href="https://www.levi.com.cn/member/constructQQLoginURL" rel="nofollow"><i class="icon icon-qq"></i></a>
+														<a data-width="960" data-height="726" data-href="https://www.levi.com.cn/member/constructAlipayLoginURL" rel="nofollow"><i class="icon icon-alipay"></i></a> 
+													</div>
+												</div>
+												<div class="register-btn">
+													<a href="/member/register" class="btn btn-grey">注&nbsp;&nbsp;册</a>
+													<a  href = "https://www.levi.com.cn/guest/order-search.htm" 
+														class="btn btn-border">订单查询</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<span>|</span>							
+								</li>
+								<li class="nav-online-service none-xs">
+									<a href="javascript:void(0);" title="在线客服" class="live800-event">
+										在线客服
+									</a>
+									<span>|</span>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+					 <div class="pad-menu-icon inline-block events-m-menu">
+						    	<i class="icon icon-menu"></i>
+						    </div>
+
+</div>
+<!-- 顶部导航部分 -->
+<header class="header ">
+	<!-- 添加第三方登录验证代码 -->
+	<meta property="qc:admins" content="3073605473645616375636" />
+	<textarea rows="15" cols="65" style="display: none;" id="sensitivePublicKey">MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDB8/XRNDMsfrVOZ3NCV64Hrm75
+tIRG2SqnTRm6x/Pl/pTuGv9fTCYTg79exJ9t1L1FE9ZGBJeZP0+jyoWwz9QA8yLP
+eo2Nqoy+y/Fq98naeqQ6aclSj0ZhSdbS6q1zzBo5Tc8upd4U6A5cOtGCJ0K+7CzJ
+Cb45Z+xVoLTlue7M1QIDAQAB
+</textarea>
+	<div class="header-container float-clearfix">
+		<nav class="nav-bar header-left">
+			<h1 class="navbar-header inline-block">
+				<a href="https://www.levi.com.cn/"><img src="//image.levi.com.cn/images/common/logo.png"
+					title="Levi's 官方商城" class="logo"></a>
+			</h1>
+			<div class="navbar-menu inline-block events-m-menu-res">
+				<div class="m-menu-box">
+				
+					<div class="m-login-box">
+								<a class="m-menu-btn e-menu-btn"><i class="icon icon-menu-left"></i></a>
+								<div class="m-login-btn float-clearfix">
+									<i class="icon icon-login-m"></i>
+									<a href="https://www.levi.com.cn/member/login" class="m-login">登录</a>
+									<a href="https://www.levi.com.cn/member/register" class="m-register">注册</a> <span></span>
+								</div>
+							</div>
+						<ul class="nav nav-pills events-menu-sub">
+						<li class="active">
+			<a href="https://www.levi.com.cn/new-arrivals-all" element_id="新品" >新品<i class="icon icon-plus"></i></a>
+			<div class="sub-menu">
+						<ul class="sub-menu-ul">
+							<li >
+									<h3 class="sub-menu-title">新品上市<i class="icon icon-arrow-right"></i></h3>
+									<div class="three-menu">
+										<div class="m-three-back">
+											<i class="icon icon-arrow-left-white"></i>
+										</div>
+										<ul>
+											<li><a href="https://www.levi.com.cn/new-arrivals-men" element_id="男装" >男装</a></li>
+											<li><a href="https://www.levi.com.cn/new-arrivals-women" element_id="女装" >女装</a></li>
+											<li><a href="https://www.levi.com.cn/new-arrivals-acc" element_id="配饰" >配饰</a></li>
+											</ul>
+									</div>
+								</li>			
+							</ul>
+						<div class="sub-menu-img">
+									<a href="javascript:void(0);">
+										<img src="//image.levi.com.cn/resources//images/cms/nav-img/1-新品.jpg" width="210" height="270" />
+											</a>
+								</div>
+							</div>
+				</li>
+	<li >
+			<a href="https://www.levi.com.cn/men" element_id="男装" >男装<i class="icon icon-plus"></i></a>
+			<div class="sub-menu">
+					<ul class="sub-menu-ul">
+						<li class="none-xs offbeat">
+							<ul class="offbeat-weight">
+								<li>
+									<a href="/new-arrivals-men" element_id="top-nav-men-newproducts"><img src="//image.levi.com.cn/images/header-nav/new-arrivals.png"/> </a>
+								</li>
+								<!-- <li>
+									<a href="">季末清仓 </a>
+								</li> -->
+								<li>
+									<a href="javascript:void(0);" style= "cursor:default" element_id="top-nav-men-camapign"><img src="//image.levi.com.cn/images/header-nav/activity.png"/> </a>
+								</li>
+							</ul>
+							<ul class="offbeat-img">
+								<li>
+									<a href="/men/cooljeans" element_id="top-nav-men-酷爽系列">
+										<span>酷爽系列</span>
+										<img src="//image.levi.com.cn/images/header-nav/offbeat-0404.png" />
+									</a>
+								</li>
+								<li>
+									<a href="/william" element_id="top-nav-men-陈伟霆同款">
+										<span>陈伟霆同款</span>
+										<img src="//image.levi.com.cn/images/header-nav/offbeat.png" />
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li >
+									<h3 class="sub-menu-title">产品品类<i class="icon icon-arrow-right"></i></h3>
+									<div class="three-menu">
+										<div class="m-three-back">
+											<i class="icon icon-arrow-left-white"></i>
+										</div>
+										<ul>
+											<li><a href="https://www.levi.com.cn/men-01" element_id="全部品类" >全部品类</a></li>
+											<li><a href="https://www.levi.com.cn/men/jeans" element_id="牛仔裤" >牛仔裤</a></li>
+											<li><a href="https://www.levi.com.cn/men/trouser" element_id="休闲裤" >休闲裤</a></li>
+											<li><a href="https://www.levi.com.cn/men/denim-trucker" element_id="牛仔夹克" >牛仔夹克</a></li>
+											<li><a href="https://www.levi.com.cn/men/shirts" element_id="衬衫" >衬衫</a></li>
+											<li><a href="https://www.levi.com.cn/men/poloshirt" element_id="T恤&POLO衫" >T恤&POLO衫</a></li>
+											<li><a href="https://www.levi.com.cn/men/vest" element_id="背心" >背心</a></li>
+											<li><a href="https://www.levi.com.cn/men/shorts" element_id="短裤" >短裤</a></li>
+											<li><a href="https://www.levi.com.cn/men/sweater-fleece" element_id="毛衣&卫衣" >毛衣&卫衣</a></li>
+											<li><a href="https://www.levi.com.cn/men/jackets" element_id="夹克外套" >夹克外套</a></li>
+											<li><a href="https://www.levi.com.cn/men/downjackets" element_id="羽绒服&棉服" >羽绒服&棉服</a></li>
+											<li><a href="https://www.levi.com.cn/men/bodywear" element_id="内衣" >内衣</a></li>
+											<li><a href="https://www.levi.com.cn/men/accessories" element_id="配饰" >配饰</a></li>
+											<li><a href="https://www.levi.com.cn/sale-men" element_id="SALE" style="color:#F00;font-weight:bold;">SALE</a></li>
+											</ul>
+									</div>
+								</li>			
+							<li class="none-xs">
+									<h3 class="sub-menu-title">热卖版型<i class="icon icon-arrow-right"></i></h3>
+									<div class="three-menu">
+										<div class="m-three-back">
+											<i class="icon icon-arrow-left-white"></i>
+										</div>
+										<ul>
+											<li><a href="https://www.levi.com.cn/men/baggy_01" element_id="BAGGY 复古宽松" >BAGGY 复古宽松</a></li>
+											<li><a href="https://www.levi.com.cn/men/501jeans" element_id="501  <sup>®</sup>  经典直筒中腰" >501  <sup>®</sup>  经典直筒中腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/taperfit" element_id="501 <sup>®</sup> CT经典锥型中腰" >501 <sup>®</sup> CT经典锥型中腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/skinny" element_id="501 <sup>®</sup> SKINNY经典紧身" >501 <sup>®</sup> SKINNY经典紧身</a></li>
+											<li><a href="https://www.levi.com.cn/men/502jeans" element_id="502 ™ 宽松锥型低腰" >502 ™ 宽松锥型低腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/505jeans" element_id="505 ™ 宽松直筒中腰" >505 ™ 宽松直筒中腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/510jeans" element_id="510 ™ 紧身中腰" >510 ™ 紧身中腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/511jeans" element_id="511 ™ 修身低腰" >511 ™ 修身低腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/513jeans" element_id="513 ™ 修身直筒低腰" >513 ™ 修身直筒低腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/514jeans" element_id="514 ™ 直筒低腰" >514 ™ 直筒低腰</a></li>
+											<li><a href="https://www.levi.com.cn/men/519jeans" element_id="519 ™ 超紧身低腰" >519 ™ 超紧身低腰</a></li>
+											</ul>
+									</div>
+								</li>			
+							<li class="none-xs">
+									<h3 class="sub-menu-title">主打系列<i class="icon icon-arrow-right"></i></h3>
+									<div class="three-menu">
+										<div class="m-three-back">
+											<i class="icon icon-arrow-left-white"></i>
+										</div>
+										<ul>
+											<li><a href="https://www.levi.com.cn/men/cooljeans" element_id="酷爽系列" >酷爽系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/2018h1fit" element_id="全新球鞋牛仔裤" >全新球鞋牛仔裤</a></li>
+											<li><a href="https://www.levi.com.cn/men/silver_tab" element_id="限量银标系列" >限量银标系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/2017l4l_0918" element_id="限量街拍系列" >限量街拍系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/line8" element_id="Line 8系列" >Line 8系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/2018sportswear" element_id="美式复古运动系列" >美式复古运动系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/lvc" element_id="LVC高端复刻系列" >LVC高端复刻系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/lmc" element_id="LMC高端精工系列" >LMC高端精工系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/commuter" element_id="都市骑行系列" >都市骑行系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/sk8" element_id="滑板系列" >滑板系列</a></li>
+											<li><a href="https://www.levi.com.cn/men/japanese" element_id="MIJ日本制系列" >MIJ日本制系列</a></li>
+											</ul>
+									</div>
+								</li>			
+							</ul>
+				</div>
+			</li>
+	<li >
+			<a href="https://www.levi.com.cn/women" element_id="女装" >女装<i class="icon icon-plus"></i></a>
+			<div class="sub-menu">
+					<ul class="sub-menu-ul">
+						<li class="none-xs offbeat">
+							<ul class="offbeat-weight">
+								<li>
+									<a href="/new-arrivals-women" element_id="top-nav-women-newproducts"><img src="//image.levi.com.cn/images/header-nav/new-arrivals.png"/> </a>
+								</li>
+								<!-- <li>
+									<a href="">季末清仓 </a>
+								</li> -->
+								<li>
+									<a href="javascript:void(0);" style= "cursor:default" element_id="top-nav-women-camapign"><img src="//image.levi.com.cn/images/header-nav/activity.png"/> </a>
+								</li>
+							</ul>
+							<ul class="offbeat-img">
+								<li>
+									<a href="/women/cooljeans" element_id="top-nav-women-酷爽系列">
+										<span>酷爽系列</span>
+										<img src="//image.levi.com.cn/images/header-nav/offbeat-0404.png" />
+									</a>
+								</li>
+								<li>
+									<a href="/william" element_id="top-nav-women-陈伟霆同款">
+										<span>陈伟霆同款</span>
+										<img src="//image.levi.com.cn/images/header-nav/offbeat.png" />
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li >
+									<h3 class="sub-menu-title">产品品类<i class="icon icon-arrow-right"></i></h3>
+									<div class="three-menu">
+										<div class="m-three-back">
+											<i class="icon icon-arrow-left-white"></i>
+										</div>
+										<ul>
+											<li><a href="https://www.levi.com.cn/women-01" element_id="全部品类" >全部品类</a></li>
+											<li><a href="https://www.levi.com.cn/women/jeans" element_id="牛仔裤" >牛仔裤</a></li>
+											<li><a href="https://www.levi.com.cn/women/denim-trucker" element_id="牛仔夹克" >牛仔夹克</a></li>
+											<li><a href="https://www.levi.com.cn/women/shirts" element_id="衬衫" >衬衫</a></li>
+											<li><a href="https://www.levi.com.cn/women/tshirt" element_id="T恤" >T恤</a></li>
+											<li><a href="https://www.levi.com.cn/women/dress" element_id="裙子" >裙子</a></li>
+											<li><a href="https://www.levi.com.cn/women/vest" element_id="背心" >背心</a></li>
+											<li><a href="https://www.levi.com.cn/women/shorts" element_id="短裤" >短裤</a></li>
+											<li><a href="https://www.levi.com.cn/women/jackets" element_id="夹克外套" >夹克外套</a></li>
+											<li><a href="https://www.levi.com.cn/women/sweater-fleece" element_id="毛衣&卫衣" >毛衣&卫衣</a></li>
+											<li><a href="https://www.levi.com.cn/women/downjackets" element_id="羽绒服&棉服" >羽绒服&棉服</a></li>
+											<li><a href="https://www.levi.com.cn/women/accessories" element_id="配饰" >配饰</a></li>
+											<li><a href="https://www.levi.com.cn/sale-women" element_id="SALE" style="color:#F00;font-weight:bold;">SALE</a></li>
+											</ul>
+									</div>
+								</li>			
+							<li class="none-xs">
+									<h3 class="sub-menu-title">热卖版型<i class="icon icon-arrow-right"></i></h3>
+									<div class="three-menu">
+										<div class="m-three-back">
+											<i class="icon icon-arrow-left-white"></i>
+										</div>
+										<ul>
+											<li><a href="https://www.levi.com.cn/women/baggy_01" element_id="BAGGY 复古宽松" >BAGGY 复古宽松</a></li>
+											<li><a href="https://www.levi.com.cn/women/revel" element_id="Revel ™ 心机塑形裤" >Revel ™ 心机塑形裤</a></li>
+											<li><a href="https://www.levi.com.cn/women/710jeans" element_id="710 超紧身中腰" >710 超紧身中腰</a></li>
+											<li><a href="https://www.levi.com.cn/women/711jeans" element_id="711 紧身中腰" >711 紧身中腰</a></li>
+											<li><a href="https://www.levi.com.cn/women/720jeans" element_id="720 超紧身高腰" >720 超紧身高腰</a></li>
+											<li><a href="https://www.levi.com.cn/women/721jeans" element_id="721 紧身高腰" >721 紧身高腰</a></li>
+											<li><a href="https://www.levi.com.cn/women/501ctjeans" element_id="501 <sup>®</sup> CT经典锥型中腰" >501 <sup>®</sup> CT经典锥型中腰</a></li>
+											<li><a href="https://www.levi.com.cn/women/skinny" element_id="501 <sup>®</sup> SKINNY经典紧身" >501 <sup>®</sup> SKINNY经典紧身</a></li>
+											<li><a href="https://www.levi.com.cn/women/suspender" element_id="背带裤" >背带裤</a></li>
+											<li><a href="https://www.levi.com.cn/women/boyfriend-jeans" element_id="男友风" >男友风</a></li>
+											</ul>
+									</div>
+								</li>			
+							<li class="none-xs">
+									<h3 class="sub-menu-title">主打系列<i class="icon icon-arrow-right"></i></h3>
+									<div class="three-menu">
+										<div class="m-three-back">
+											<i class="icon icon-arrow-left-white"></i>
+										</div>
+										<ul>
+											<li><a href="https://www.levi.com.cn/women/cooljeans" element_id="酷爽系列" >酷爽系列</a></li>
+											<li><a href="https://www.levi.com.cn/women/2018h1fit" element_id="全新球鞋牛仔裤" >全新球鞋牛仔裤</a></li>
+											<li><a href="https://www.levi.com.cn/women/2017l4l_0918" element_id="限量街拍系列" >限量街拍系列</a></li>
+											<li><a href="https://www.levi.com.cn/women/line8" element_id="Line 8系列" >Line 8系列</a></li>
+											<li><a href="https://www.levi.com.cn/women/2018sportswear" element_id="美式复古运动系列" >美式复古运动系列</a></li>
+											<li><a href="https://www.levi.com.cn/women/lvc" element_id="LVC高端复刻系列" >LVC高端复刻系列</a></li>
+											<li><a href="https://www.levi.com.cn/women/lmc" element_id="LMC高端精工系列" >LMC高端精工系列</a></li>
+											<li><a href="https://www.levi.com.cn/women/japanese" element_id="MIJ日本制系列" >MIJ日本制系列</a></li>
+											</ul>
+									</div>
+								</li>			
+							</ul>
+				</div>
+			</li>
+	<li >
+			<a href="https://www.levi.com.cn/landing/2018cny" element_id="精选系列" >精选系列<i class="icon icon-plus"></i></a>
+			<div class="sub-menu">
+					<ul class="sub-menu-ul">
+						<li >
+								<h3 class="sub-menu-title">精选系列<i class="icon icon-arrow-right"></i></h3>
+								<div class="three-menu">
+									<div class="m-three-back">
+										<i class="icon icon-arrow-left-white"></i>
+									</div>
+									<ul>
+										<li><a href="https://www.levi.com.cn/landing/2018h1cool" element_id="酷爽系列" >酷爽系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2018h1taper" element_id="全新球鞋牛仔裤" >全新球鞋牛仔裤</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2018h2C2C3" element_id="限量街拍系列" >限量街拍系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2018h1baggy" element_id="BAGGY复古宽松牛仔裤" >BAGGY复古宽松牛仔裤</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2018h1silvertab" element_id="限量银标系列" >限量银标系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2018h1line8" element_id="Line 8系列" >Line 8系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2018sportswear" element_id="美式复古运动系列" >美式复古运动系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2018cny" element_id="2018新春系列" >2018新春系列</a></li>
+										<li><a href="https://www.levi.com.cn/lvc" element_id="LVC高端复刻系列" >LVC高端复刻系列</a></li>
+										<li><a href="https://www.levi.com.cn/lmc" element_id="LMC高端精工系列" >LMC高端精工系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2017h2commuter" element_id="都市骑行系列" >都市骑行系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2017h2skateboarding" element_id="滑板系列" >滑板系列</a></li>
+										<li><a href="https://www.levi.com.cn/landing/2017warm" element_id="冬暖系列" >冬暖系列</a></li>
+										</ul>
+								</div>
+							</li>			
+						</ul>
+					<div class="sub-menu-img">
+								<a href="javascript:void(0);">
+									<img src="//image.levi.com.cn/resources//images/cms/nav-img/4-精选系列.jpg" width="210" height="270" />
+										</a>
+							</div>
+						</div>
+			</li>
+	<li class="sale-pill">
+			<a href="https://www.levi.com.cn/sale" element_id="SALE" style="cursor: pointer;">SALE<i class="icon icon-plus"></i></a>
+			<div class="sub-menu">
+					<ul class="sub-menu-ul">
+						<li >
+								<h3 class="sub-menu-title">SALE<i class="icon icon-arrow-right"></i></h3>
+								<div class="three-menu">
+									<div class="m-three-back">
+										<i class="icon icon-arrow-left-white"></i>
+									</div>
+									<ul>
+										<li><a href="https://www.levi.com.cn/sale-men-01" element_id="男装" >男装</a></li>
+										<li><a href="https://www.levi.com.cn/sale-women-01" element_id="女装" >女装</a></li>
+										<li><a href="https://www.levi.com.cn/sale-accessory-01" element_id="配饰" >配饰</a></li>
+										</ul>
+								</div>
+							</li>			
+						</ul>
+					<div class="sub-menu-img">
+								<a href="javascript:void(0);">
+									<img src="//image.levi.com.cn/resources//images/cms/nav-img/5-sale.jpg" width="210" height="270" />
+										</a>
+							</div>
+						</div>
+			</li>
+	<li >
+			<a href="https://www.levi.com.cn/landing/brand-story" element_id="品牌动态" >品牌动态<i class="icon icon-plus"></i></a>
+			<div class="sub-menu">
+					<ul class="sub-menu-ul">
+						<li >
+								<h3 class="sub-menu-title">品牌动态<i class="icon icon-arrow-right"></i></h3>
+								<div class="three-menu">
+									<div class="m-three-back">
+										<i class="icon icon-arrow-left-white"></i>
+									</div>
+									<ul>
+										<li><a href="https://www.levi.com.cn/landing/brand-story?fix=0" element_id="个性定制" >个性定制</a></li>
+										<li><a href="https://www.levi.com.cn/landing/brand-story?fix=1" element_id="品牌故事" >品牌故事</a></li>
+										</ul>
+								</div>
+							</li>			
+						</ul>
+					<div class="sub-menu-img">
+								<a href="javascript:void(0);">
+									<img src="//image.levi.com.cn/resources//images/cms/nav-img/6-品牌动态.jpg" width="210" height="270" />
+										</a>
+							</div>
+						</div>
+			</li>
+	<li >
+			<a href="https://www.levi.com.cn/landing/2017fit" element_id="寻找你的型" >寻找你的型<i class="icon icon-plus"></i></a>
+			</li>
+	<li class="m-top none block-xs"><a href="javascript:void(0);" class="guest-icon-m guest-search-event"><i class="icon icon-order-m"></i>订单查询</a></li>
+						<li class="m-top none block-xs"><a class="guest-icon-m" href="https://www.levi.com.cn/landing/faq-member"><i class="icon icon-plan-m"></i>会员计划</a></li>
+						<li class="m-top none block-xs"><a class="guest-icon-m live800-event"><i class="icon icon-service-m"></i>客户服务</a></li>
+						<li class="m-top none block-xs"><a class="guest-icon-m" href="https://www.levi.com.cn/storeLocator.htm"><i class="icon icon-store-m"></i>门店查找</a></li>
+						</ul>
+				</div>
+			</div>
+			<div class="pad-menu-icon inline-block events-m-menu">
+				<i class="icon icon-menu"></i>
+			</div>
+		</nav>
+		<div class="header-right events-header-right">
+			<ul class="header-right-box float-clearfix">
+				<li class="header-code">
+					<i class="icon icon-header-code"></i>
+					<div class="header-code-submenu">
+						<i class="icon codesubmenu-icon"></i>
+						<div class="">
+							<div class="code-box"><img alt="" src="//image.levi.com.cn/images/qrcode/qrcode1.jpg"></div>
+							<p>关注官方微信<br/>赢Levi's<sup>®</sup>牛仔裤</p>
+						</div>
+					</div>
+				</li>
+				<li class="header-search">
+					<a>
+						<i class="icon icon-search" id="heardSerach"></i>
+					</a>
+					<div class="form-input header-right-submenu">
+						<input type="text" placeholder="酷爽系列" id="heardSearchInput" />
+						<span>
+							<i class="icon icon-search-grey" id="heardSerachMobile"></i>
+						</span>
+						<div class="sub-menu tinyscrollbar events-tinyscrollbar">
+							<div class="viewport">
+								<ul class="overview">
+										<li>
+												<a word-href="javascript:searchword('/2018h1fit_1')">全新球鞋牛仔裤</a>
+											</li>
+										<li>
+												<a word-href="javascript:searchword('/snoopy')">SNOOPY</a>
+											</li>
+										<li>
+												<a word-href="javascript:searchword('/2018sportswear')">复古运动</a>
+											</li>
+										<li>
+												<a word-href="javascript:searchword('/men/sk8')">滑板系列</a>
+											</li>
+										<li>
+												<a word-href="javascript:searchword('/men/commuter')">骑行系列</a>
+											</li>
+										</ul>
+								</div>
+						</div>
+					</div>
+				</li>
+				
+				<li class="mini-cart-li events-minicart">
+					<a href="/shoppingcart"> <i class="icon icon-cart"></i> 
+						<span class="header-cart-num"></span>
+					</a>
+					<div class="header-right-submenu mini-cart-box events-minicart-res">
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+</header>
 </div>
 
+<link rel="stylesheet" type="text/css"
+	href="//image.levi.com.cn/css/homepage.css?v=20180413">
+<link rel="stylesheet" type="text/css"
+	href="//image.levi.com.cn/css/kv-css.css?v=20180413">
+
+<script type="text/javascript"
+	src="//image.levi.com.cn/js/index.js?v=201804171434"></script>
+
+<script type="text/javascript" src="//image.levi.com.cn/js/index/pop.js?v=201804171434"></script>
+
+<!-- 内容部分 -->
+<section class="container">
+	<!-- 模块0 -->
+	<article class="article none block-xs">
+		<div class="scroller-text">
+			<div class="scroller-wrap-link">
+		        <ul class="float-clearfix section-top-mob">
+		            <li class="membership-program-m">
+	                    <a href="/landing/faq-member">LIVE IN LEVI'S<sup>®</sup>会员计划</a>
+		            </li>
+		            <li class="myaccount-m">
+	                    <a href="/myAccount">我的账户</a>
+		            </li>
+		        </ul>
+	        </div>
+	    </div>
+    </article>
+    <!-- 模块0 end  -->
+	
+	
+	<!-- 模块一 -->
+	<!-- 模块一 -->
+<article class="article section-top-info">
+	<div class="scroll top-info-box events-topinfo-scroll">
+	    <div class="scroller-wrap">
+	        <ul>
+					<li>
+			           	<a href="/landing/faq-member">
+		                    <span>
+	                    		<!-- 购物1元积2分，好礼全场5折兑 <span>查看活动</span>-->
+	                    		会员购物1元积1分，多重好礼兑不停  <span>查看活动</span>
+	                    	</span>
+	                    </a>
+		            </li>
+		            <li>
+	                    <a href="/cooljeans">
+	                    	<span>2018全新酷爽系列  <span>立即选购</span></span>
+	                    </a>
+		            </li>
+				</ul>
+	    </div>
+	</div>
+</article>
+
+				
+
+
+	
+	
+	
+	<!-- 模块二 -->
+	<article class="article full-width section-banner section-banner-kv">
+	<div class="scroll events-kv-scroll">
+		<div>
+			<ul class="kv-dom">
+				<li iid="2018cool20180408_01"><!-- mob按钮上下显示：0不是上下显示，1是上下显示 -->
+									<div class="scroll-background-image">
+										<a href="javascript:void(0);" > 
+											<img src="//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180408160020.jpg?v=201804171434"
+												width="1380" height="460"
+												data-image-src='{"mobile": "//image.levi.com.cn/resources/images/cms/newkv-img/mobile/testkv/20180408160027.jpg?v=201804171434", 
+									        					 "ipad": "//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180408160020.jpg?v=201804171434", 
+									        					 "pc": "//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180408160020.jpg?v=201804171434"}'
+												alt="" />
+										</a>
+									</div>
+									<!-- pc按钮样式 -->
+									<div class="scroll-background-newbtn scroll-background-btn-pc" style="bottom:25%; left:45.46%;">
+										<div class="float-clearfix button-width">
+											<!--链接和图片链接一样-->
+											<a class="image-link" href="javascript:void(0);"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+											<!-- 原版class形成按钮 -->
+														<!--新版上传图片形成按钮  -->
+														<div class="btn" style="width:10%; margin-left:1%;float:left;">
+																<a href="https://www.levi.com.cn/cooljeans">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btn/testkv/20180408162236.jpg?v=201804171434" alt="" />
+																	<img class="cms-hover" src="//image.levi.com.cn/resources/images/cms/newkv-img/btnH/testkv/20180408162232.jpg?v=201804171434" alt="" />
+																	</a>
+															</div>
+														<!-- 原版class形成按钮 -->
+														<!--新版上传图片形成按钮  -->
+														<div class="btn" style="width:10%; margin-left:1%;float:left;">
+																<a href="https://www.levi.com.cn/landing/2018h1cool">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btn/testkv/20180408162306.jpg?v=201804171434" alt="" />
+																	<img class="cms-hover" src="//image.levi.com.cn/resources/images/cms/newkv-img/btnH/testkv/20180408162300.jpg?v=201804171434" alt="" />
+																	</a>
+															</div>
+														</div>
+									</div>
+									<!-- mob按钮样式 -->
+									<div class="scroll-background-newbtn scroll-background-btn-mob" style="bottom:27%; left:19%;">
+										<div class="float-clearfix button-width">
+											<a class="image-link" href="javascript:void(0);"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+											<!-- 原版class形成按钮 -->
+														<!--新版上传图片 形成按钮 -->
+														<div class="btn" style="width:21.5%;background-color:transparent;
+																					margin-left:1%;">
+																<a href="https://www.levi.com.cn/cooljeans">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btnM/testkv/20180408162242.jpg?v=201804171434" alt="" />
+																</a>
+															</div>
+														<!-- 原版class形成按钮 -->
+														<!--新版上传图片 形成按钮 -->
+														<div class="btn" style="width:21.5%;background-color:transparent;
+																					margin-left:1%;">
+																<a href="https://www.levi.com.cn/landing/2018h1cool">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btnM/testkv/20180408162311.jpg?v=201804171434" alt="" />
+																</a>
+															</div>
+														</div>
+									</div>
+								</li>
+					<li iid="supima20180413_01"><!-- mob按钮上下显示：0不是上下显示，1是上下显示 -->
+									<div class="scroll-background-image">
+										<a href="javascript:void(0);" > 
+											<img src="//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180413170007.jpg?v=201804171434"
+												width="1380" height="460"
+												data-image-src='{"mobile": "//image.levi.com.cn/resources/images/cms/newkv-img/mobile/testkv/20180413171825.jpg?v=201804171434", 
+									        					 "ipad": "//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180413170007.jpg?v=201804171434", 
+									        					 "pc": "//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180413170007.jpg?v=201804171434"}'
+												alt="" />
+										</a>
+									</div>
+									<!-- pc按钮样式 -->
+									<div class="scroll-background-newbtn scroll-background-btn-pc" style="bottom:22%; left:27%;">
+										<div class="float-clearfix button-width">
+											<!--链接和图片链接一样-->
+											<a class="image-link" href="javascript:void(0);"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+											<!-- 原版class形成按钮 -->
+														<!--新版上传图片形成按钮  -->
+														<div class="btn" style="width:10%; margin-left:2%;float:left;">
+																<a href="https://www.levi.com.cn/supima">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btn/testkv/20180413170149.jpg?v=201804171434" alt="" />
+																	<img class="cms-hover" src="//image.levi.com.cn/resources/images/cms/newkv-img/btnH/testkv/20180413170144.jpg?v=201804171434" alt="" />
+																	</a>
+															</div>
+														<!-- 原版class形成按钮 -->
+														<!--新版上传图片形成按钮  -->
+														<div class="btn" style="width:10%; margin-left:2%;float:left;">
+																<a href="https://www.levi.com.cn/landing/2018h1supima">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btn/testkv/20180413170205.jpg?v=201804171434" alt="" />
+																	<img class="cms-hover" src="//image.levi.com.cn/resources/images/cms/newkv-img/btnH/testkv/20180413170210.jpg?v=201804171434" alt="" />
+																	</a>
+															</div>
+														</div>
+									</div>
+									<!-- mob按钮样式 -->
+									<div class="scroll-background-newbtn scroll-background-btn-mob" style="bottom:22.5%; left:-20%;">
+										<div class="float-clearfix button-width">
+											<a class="image-link" href="javascript:void(0);"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+											<!-- 原版class形成按钮 -->
+														<!--新版上传图片 形成按钮 -->
+														<div class="btn" style="width:23%;background-color:transparent;
+																					margin-left:2%;">
+																<a href="https://www.levi.com.cn/supima">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btnM/testkv/20180413174009.jpg?v=201804171434" alt="" />
+																</a>
+															</div>
+														<!-- 原版class形成按钮 -->
+														<!--新版上传图片 形成按钮 -->
+														<div class="btn" style="width:23%;background-color:transparent;
+																					margin-left:2%;">
+																<a href="https://www.levi.com.cn/landing/2018h1supima">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btnM/testkv/20180413170200.jpg?v=201804171434" alt="" />
+																</a>
+															</div>
+														</div>
+									</div>
+								</li>
+					<li iid="snoopy20180413_02"><!-- mob按钮上下显示：0不是上下显示，1是上下显示 -->
+									<div class="scroll-background-image">
+										<a href="javascript:void(0);" > 
+											<img src="//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180413170235.jpg?v=201804171434"
+												width="1380" height="460"
+												data-image-src='{"mobile": "//image.levi.com.cn/resources/images/cms/newkv-img/mobile/testkv/20180413170254.jpg?v=201804171434", 
+									        					 "ipad": "//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180413170235.jpg?v=201804171434", 
+									        					 "pc": "//image.levi.com.cn/resources/images/cms/newkv-img/testkv/20180413170235.jpg?v=201804171434"}'
+												alt="" />
+										</a>
+									</div>
+									<!-- pc按钮样式 -->
+									<div class="scroll-background-newbtn scroll-background-btn-pc" style="bottom:9.5%; left:36.8%;">
+										<div class="float-clearfix button-width">
+											<!--链接和图片链接一样-->
+											<a class="image-link" href="javascript:void(0);"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+											<!-- 原版class形成按钮 -->
+														<!--新版上传图片形成按钮  -->
+														<div class="btn" style="width:10%; margin-left:2%;float:left;">
+																<a href="https://www.levi.com.cn/snoopy">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btn/testkv/20180413170352.jpg?v=201804171434" alt="" />
+																	<img class="cms-hover" src="//image.levi.com.cn/resources/images/cms/newkv-img/btnH/testkv/20180413170837.jpg?v=201804171434" alt="" />
+																	</a>
+															</div>
+														<!-- 原版class形成按钮 -->
+														<!--新版上传图片形成按钮  -->
+														<div class="btn" style="width:10%; margin-left:2%;float:left;">
+																<a href="https://www.levi.com.cn/landing/2018h1snoopy">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btn/testkv/20180413170910.jpg?v=201804171434" alt="" />
+																	<img class="cms-hover" src="//image.levi.com.cn/resources/images/cms/newkv-img/btnH/testkv/20180413170906.jpg?v=201804171434" alt="" />
+																	</a>
+															</div>
+														</div>
+									</div>
+									<!-- mob按钮样式 -->
+									<div class="scroll-background-newbtn scroll-background-btn-mob" style="bottom:19%; left:0%;">
+										<div class="float-clearfix button-width">
+											<a class="image-link" href="javascript:void(0);"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+											<!-- 原版class形成按钮 -->
+														<!--新版上传图片 形成按钮 -->
+														<div class="btn" style="width:23%;background-color:transparent;
+																					margin-left:2%;">
+																<a href="https://www.levi.com.cn/snoopy">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btnM/testkv/20180413170852.jpg?v=201804171434" alt="" />
+																</a>
+															</div>
+														<!-- 原版class形成按钮 -->
+														<!--新版上传图片 形成按钮 -->
+														<div class="btn" style="width:23%;background-color:transparent;
+																					margin-left:2%;">
+																<a href="https://www.levi.com.cn/landing/2018h1snoopy">
+																	<img src="//image.levi.com.cn/resources/images/cms/newkv-img/btnM/testkv/20180413170414.jpg?v=201804171434" alt="" />
+																</a>
+															</div>
+														</div>
+									</div>
+								</li>
+					</ul>
+		</div>
+	</div>
+</article><!-- 模块三 -->
+	<article class="article section-series section-series-two">
+<div class="tinyscrollbar tinyscrollbar-x events-m-series-scroll">
+	    <div class="viewport">
+	        <div class="overview">
+	    		<ul class="float-clearfix">
+	    			<li>
+		    			<a href="https://www.levi.com.cn/men">
+		    					<img src="//image.levi.com.cn/resources/images/cms/newbanner-img/left/zuoyou/20180408162819.jpg?v=201804171434" data-image-src='{
+			        				"mobile": "//image.levi.com.cn/resources/images/cms/newbanner-img/left/mob/zuoyou/20180408162847.jpg?v=201804171434", 
+			        				"ipad": "//image.levi.com.cn/resources/images/cms/newbanner-img/left/zuoyou/20180408162819.jpg?v=201804171434", 
+			        				"pc": "//image.levi.com.cn/resources/images/cms/newbanner-img/left/zuoyou/20180408162819.jpg?v=201804171434"}' alt=""/>
+		    					<div class="series-button">
+		    						<div>
+		    							<div>
+		    								<button class="btn btn-white">男装</button>
+		    							</div>
+		    						</div>
+		    					</div>
+		    				</a>
+		    			</li>
+	    			<li>
+	    				<a href="https://www.levi.com.cn/women">
+		    					<img src="//image.levi.com.cn/resources/images/cms/newbanner-img/right/zuoyou/20180408162825.jpg?v=201804171434" data-image-src='{
+			        				"mobile": "//image.levi.com.cn/resources/images/cms/newbanner-img/right/mob/zuoyou/20180408162834.jpg?v=201804171434", 
+			        				"ipad": "//image.levi.com.cn/resources/images/cms/newbanner-img/right/zuoyou/20180408162825.jpg?v=201804171434", 
+			        				"pc": "//image.levi.com.cn/resources/images/cms/newbanner-img/right/zuoyou/20180408162825.jpg?v=201804171434"}' alt=""/>
+		    					<div class="series-button">
+		    						<div>
+		    							<div>
+		    								<button class="btn btn-white">女装</button>
+		    							</div>
+		    						</div>
+		    					</div> 
+		    				</a>
+	    				</li>
+	    		</ul>       	  
+	        </div>
+	    </div>
+	</div>
+</article><!-- 模块四 -->
+<article class="article full-width section-banner-kv section-banner section-tannin">
+	<div class="scroll">
+		<div>
+			<ul>
+				<li>
+				<div class="scroll-background-image">
+					<img src="//image.levi.com.cn/images/blank.gif" width="1380" height="460" data-image-src='{
+				        	"mobile": "//image.levi.com.cn/images/landpage/2018c2c3/zkv-m.jpg", 
+				        	"ipad": "//image.levi.com.cn/images/landpage/2018c2c3/zkv.jpg", 
+				        	"pc": "//image.levi.com.cn/images/landpage/2018c2c3/zkv.jpg"}' alt="" />
+				</div>
+				<div class="scroll-container none-xs">
+					<div class="scroll-component-content-wrap">
+						<div class="scroll-component-content">
+							<a class="link-whole" href="/2017l4l_0918"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+							<div class="scroll-btn-component">
+							<a class="link-whole" href="/2017l4l_0918"><img src="//image.levi.com.cn/images/blank.gif"/></a>
+								<div class="scroll-btn-cta">
+									<a class="btn btn-white" href="/2017l4l_0918"><span>立即选购</span></a>
+								</div>
+								<div class="scroll-btn-cta">
+									<a class="btn btn-white" href="/landing/2018h2C2C3"><span>查看更多</span></a>
+								</div>
+								<!-- <div class="scroll-btn-cta">
+										<a class="btn btn-white" href=""><span>选购全部</span></a>
+									</div> -->
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--mob-->
+				<div class="scroll-tannin-mob none block-xs ">
+					<a class="link-whole" href="/2017l4l_0918">
+				    		<img src="//image.levi.com.cn/images/blank.gif"/>
+				    	</a>
+					<a class="original-mob1" href="/2017l4l_0918">
+				    		<img src="//image.levi.com.cn/images/blank.gif"/>
+							 立即选购
+				    	</a>
+					<a class="original-mob2" href="/landing/2018h2C2C3">
+				    		<img src="//image.levi.com.cn/images/blank.gif"/>
+							 查看更多
+						</a>
+					<!-- <a class="original-mob3" href="">
+							<img src="//image.levi.com.cn/images/blank.gif" /> 
+							选购全部
+						</a> -->
+				</div>
+			</li>
+			</ul>
+		</div>
+	</div>
+</article>
+	
+	
+	<article class="article article-modular">
+					<div class="article-new-modular">
+						<ul class="float-clearfix">
+							<li>
+								<div>
+									<a href="/men/commuter">
+										<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/images/index/left_04.jpg"/>
+										<!-- <p>BAGGY阔腿裤</p> -->
+										 <div class="mask"></div>
+									</a>
+								</div>
+							</li>
+							<li class="is-active">
+								<div>
+								<a href="/men/sk8">
+									<img src="//image.levi.com.cn/images/index/mid_04.jpg" data-image-src='{
+				        				"mobile": "//image.levi.com.cn/images/index/mid_mob_04.jpg", 
+				        				"ipad": "//image.levi.com.cn/images/index/mid_04.jpg", 
+				        				"pc": "//image.levi.com.cn/images/index/mid_04.jpg"}' alt=""/>
+				        		<div class="mask"></div>
+								</a>
+									</div>
+							</li>
+							<li>
+								<div>
+									<a href="/men/silver_tab">
+										<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/images/index/right_04.jpg"/>
+										<!-- <p>SNOOPY系列</p> -->
+										<div class="mask"></div>
+									</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</article>
+
+	<!-- 模块六 -->
+	<article class="article article-modular article-modular2">
+	<div class="article-modular-pc">
+				<img src="//image.levi.com.cn/resources/images/cms/fashion-img/lookbook/20180408162555.jpg?v=201804171434" alt="" />
+					<ul class="float-clearfix">
+						<li>
+								<a href="https://www.levi.com.cn/men/shirt/21975-0008/item">
+									<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/resources/images/cms/fashion-img/lookbook/20180408162613.jpg?v=201804171434" alt="" />
+									<div class="mask"></div>
+								</a>
+							</li>
+						<li>
+								<a href="https://www.levi.com.cn/men/shirt/21975-0009/item">
+									<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/resources/images/cms/fashion-img/lookbook/20180408162620.jpg?v=201804171434" alt="" />
+									<div class="mask"></div>
+								</a>
+							</li>
+						<li>
+								<a href="https://www.levi.com.cn/men/shirt/29568-0000/item">
+									<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/resources/images/cms/fashion-img/lookbook/20180408162628.jpg?v=201804171434" alt="" />
+									<div class="mask"></div>
+								</a>
+							</li>
+						<li>
+								<a href="https://www.levi.com.cn/women/shirt/29545-0000/item">
+									<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/resources/images/cms/fashion-img/lookbook/20180408162635.jpg?v=201804171434" alt="" />
+									<div class="mask"></div>
+								</a>
+							</li>
+						</ul>
+				</div>
+		</article><article class="article section-series section-series-2 none-xs">
+		<div class="tinyscrollbar tinyscrollbar-x events-m-series-scroll">
+		    <div class="viewport">
+		        <div class="overview">
+		    		<ul class="float-clearfix">
+		    			<li class="is-active">
+	    					<a href="/landing/faq-member">
+					        	<img src="//image.levi.com.cn/images/index/new-bottom0527.jpg" width="420" height="320"  data-image-src='{
+					        		"mobile": "//image.levi.com.cn/images/index/yl.jpg", 
+					        		"ipad": "//image.levi.com.cn/images/index/new-bottom0527.jpg", 
+					        		"pc": "//image.levi.com.cn/images/index/new-bottom0527.jpg"}' alt=""/>
+		    				<!--pc-->
+	    					<div class="series-button series-bottom series-button-new">
+	    						<div>
+	    							<div>
+				    					<span class="btn btn-white">诚邀您的加入</span>
+	    							</div>
+	    						</div>
+		    				</div>
+	   						</a>
+		    				<!--pc-->
+		    				
+		    				<!--mob-->
+						    <div class="scroll-goddess-mob  scroll-father-mob">
+						    	<a class="original-mob1" href="/29671-0008/item.htm">
+						    		<img src="//image.levi.com.cn/images/blank.gif">
+						    		杨幂同款 
+						    	</a>
+						    	<a class="original-mob2" href="/women/shorts">
+						    		<img src="//image.levi.com.cn/images/blank.gif">
+						    		林允同款 
+						    	</a>
+						    </div>
+		    			</li>
+		    			<li>
+		    				<a href="/landing/sustainability">
+		    					<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/images/index/tscq1.jpg" width="420" height="320" alt="">
+		    					<div class="series-button series-bottom">
+		    						<div>
+		    							<div>
+					    					<span class="btn btn-white">立即查看</span>
+		    							</div>
+		    						</div>
+			    				</div>
+		    				</a>
+		    			</li>
+		    			<li>
+		    				<a href="/landing/2017fit">
+		    					<img src="//image.levi.com.cn/images/default.jpg" lazy-src="//image.levi.com.cn/images/index/new-bottom-0105.jpg" width="420" height="320" alt="">
+		    					<div class="series-button series-bottom">
+		    						<div>
+		    							<div>
+					    					<span class="btn btn-white">立即查看</span>
+		    							</div>
+		    						</div>
+			    				</div>
+		    				</a>
+		    			</li>
+		    		</ul>       	  
+		        </div>
+		    </div>
+		</div>
+	</article>
+	<article class="article none block-xs">
+		<div class="mob-bottom-nav">
+			<ul>
+				<li><a href="https://www.levi.com.cn/new-arrivals-all">当季新品<i class="icon icon-mob-left"></i></a></li>
+				<li><a href="https://www.levi.com.cn/men">男装<i class="icon icon-mob-left"></i></a></li>
+				<li><a href="https://www.levi.com.cn/women">女装<i class="icon icon-mob-left"></i></a></li>
+				<li><a href="https://www.levi.com.cn/men/jeans">男士牛仔裤<i class="icon icon-mob-left"></i></a></li>
+				<li><a href="https://www.levi.com.cn/women/jeans">女士牛仔裤<i class="icon icon-mob-left"></i></a></li>
+				<li><a href="/william">陈伟霆同款<i class="icon icon-mob-left"></i></a></li>
+				<li><a href="https://www.levi.com.cn/sale" style="color:red;">SALE<i class="icon icon-mob-left"></i></a></li>
+			</ul>
+		</div>
+	</article>
+	
+
+</section>
+
+			 <!--注册悬浮框--><!--//	pop   弹窗-->
+			<!--双十一增加弹窗-->
+			<script type="text/template" id="Singles">
+				<div class="dialog dialog-quickbuy onn">
+				    <div class="dialog-container on">
+						<div class="row">
+							<div class="col-10-10 quick-buy-title">
+								<img src="//image.levi.com.cn/images/activity/pop-up-new.jpg"/>
+								<a class="pop-link1" href="/member/login">
+									立即升级
+									<img src="//image.levi.com.cn/images/activity/blank.png" alt="" />
+								</a>
+								<a class="pop-link2" href="/member/register">
+									立即注册
+									<img src="//image.levi.com.cn/images/activity/blank.png" alt="" />
+								</a>
+								<a class="pop-link3" href="/landing/faq-member">
+									了解更多
+									<img src="//image.levi.com.cn/images/activity/blank.png" alt="" />
+								</a>
+							</div>
+						</div>
+						<i class="icon icon-close dialog-close"></i>
+				    </div>
+				</div>
+			</script><!-- 底部导航部分 -->
+<footer class="footer">
+	<div class="footer-top">
+		<!-- <div class="footer-top-title">
+			<p class="footer-top-title-eng">The Latest From Levi’s<sup>®</sup></p>
+			<p class="footer-top-title-zh">第一时间获取最新资讯</p>
+		</div>
+		<div class="footer-top-subscribe float-clearfix">
+			<div class="form-input">
+			    <input type="text" placeholder="请输入您的邮箱" id="subscriber-email">
+		    	<span class="msg-block">
+					<span>*请输入您的邮箱</span>
+				</span>
+			</div>
+			<a href="javascript:void(0);" class="btn btn-grey subscribe-btn subscribe-btn-event">订&nbsp;&nbsp;阅</a>
+		</div> -->
+		<div class="footer-contact-description">
+			<p class="footer-description-title">联系我们</p>
+			<p class="footer-description-info"><a  href="javascript:void(0);" class="live800-event" style="font-weight:bold">在线客服></a>（服务时间：9:00-23:00）</p>
+			<p class="footer-description-info"><b>客服热线：</b><a href="tel:400-1080-501" style="border-bottom:none;">400-1080-501</a>（服务时间：9:00-22:00）</p>
+			<p class="footer-description-info"><b>会员热线：</b><a href="tel:400-1082-501" style="border-bottom:none;">400-1082-501</a>（服务时间：周一至周六10:00-19:00）</p>
+			<p class="footer-description-info"><b>电子邮件：</b>MBXCHNcustomservice@levi.com</p>
+		</div>
+		<div class="footer-top-share float-clearfix none-xs">
+			<span class="footer-top-share-line"></span>
+			<p class="footer-share-title">关注我们</p>
+			<div class="footer-share-icon">
+				<a href="javascript:void(0);"><i class="icon pdp-icon-wx"></i></a>
+				<a href="javascript:void(0);"><i class="icon pdp-icon-sina sina-attention"></i></a>
+			</div>
+			<div class="share-wechat-box">
+				<h3>关注微信</h3>
+				<div><img alt="" src="//image.levi.com.cn/images/qrcode/qrcode3.jpg" width="180"  height="196"></div>
+				<!-- <p>打开微信，使用顶部的“扫一扫”扫描二维码，即可关注Levi's官方微信</p> -->
+				<span>×</span>
+			</div>
+		</div>
+	</div>
+	<div class="footer-middle">
+		<div class="footer-logo">
+			</div>
+		<div class="footer-contact">
+			<div class="footer-contact-link">
+				<a href="javascript:void(0);" class="live800-event">在线客服</a> <span>/</span> 
+				<a href="https://www.levi.com.cn/storeLocator.htm">门店查找</a> <span class="none-xs">/</span> 
+				<a href="https://www.levi.com.cn/faq/navigation.htm" class="none-xs">网站导航</a> <span class="none-xs">/</span>
+				<a href="https://www.levi.com.cn/faq/deliver.htm" class="none-xs">支付与配送</a> <span class="none-xs">/</span> 
+				<a href="https://www.levi.com.cn/faq/service.htm#newbie02" class="none-xs">退换政策</a> <span>/</span>
+				<a href="https://www.levi.com.cn/faq/index.htm">帮助</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+					<div class="footer-bottom-content float-clearfix">
+						<a href="http://global.levi.com" class="global-link none-xs">前往全球站点</a>
+						<div class="footer-bottom-content-right">
+							<span>利惠商业（上海）有限公司</span>
+							<span class="footer-bottom-line">|</span>
+							<span><a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">沪ICP备12026822号</a></span>
+							<span class="footer-bottom-line">|</span>
+							<br />
+							<span><a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010602000236"><i class="icon icon-ha"></i>沪公网安备 31010602000236号 </a></span>
+							<span class="footer-bottom-line">|</span>
+							<span><a href="https://www.sgs.gov.cn/lz/licenseLink.do?method=licenceView&entyId=20140909154742624"> <i class="icon icon-national-emblem"></i>上海工商</a></span>
+						</div>
+					</div>
+	</div>
+	
+	
+		<input type="hidden" id="requestCmbUseragent" value="" >
+	
+	
+	
+</footer>
+<!-- 公共部分放最下，如回到顶部，弹出层等 -->
+
+<!-- 返回顶部部分 -->
+<div class="back-top events-top">
+	<i class="icon icon-back-top"></i>
+	<span>TOP</span>
 </div>
+
+<script type="text/javascript">
+var _zzsiteid="a9UVM06oatP";
+var _zzid = "a9UVM06oatO";
+$(window).load(function(){
+	(function() {
+	  var zz = document.createElement('script');
+	  zz.type = 'text/javascript';
+	  zz.async = true;
+	  zz.src = 'https:' == document.location.protocol ? 'https://static.zhiziyun.com/trace/api/trace.js' : 'http://static.zhiziyun.com/trace/api/trace.js';
+	  var s = document.getElementsByTagName('script')[0];
+	  s.parentNode.insertBefore(zz, s);
+	})();
+});
+</script>
+<!-- omniture底部代码开始  -->
 <script type="text/javascript">_satellite.pageBottom();</script>
-
+<!-- omniture底部代码结束 --></div>
+	
 </body>
-
 </html>
