@@ -1,6 +1,6 @@
  function ikea_pageflow_1(){
    window.dataLayer.push({
-     'event': 'event',
+     'event': 'GA-event',
      'page': {
       'name': 'flow 1'
      },
@@ -15,12 +15,12 @@
 
  function ikea_pageflow_2(){
    window.dataLayer.push({
-     'event': 'event',
+     'event': 'GA-event',
      'page': {
       'name': 'flow 2'
      },
      'user': {
-       'id': '555'
+       'id': '666'
      },
      'site': {
        'environment': 'live'
