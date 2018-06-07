@@ -1,4 +1,17 @@
- function ikea_pageflow_1(){
+var chars = ['0','1','2','3','4','5','6','7','8','9'];
+
+function generateMixed(n) {
+     var res = "";
+     for(var i = 0; i < n ; i ++) {
+         var id = Math.ceil(Math.random()*9);
+         res += chars[id];
+     }
+     return res;
+}
+
+var ID_random = generateMixed(10); 
+
+function ikea_pageflow_1(){
    window.dataLayer.push({
      'event': 'GA-event',
      'page': {
@@ -10,7 +23,7 @@
         'label': 'flow 1 label'
       },
      'user': {
-       'id': '555'
+       'id': ID_random
      },
      'site': {
        'environment': 'live'
@@ -22,7 +35,7 @@
    window.dataLayer.push({
      'event': 'GA-event',
      'page': {
-      'name': 'flow 2'
+      'name': ID_random
      },
      'eventDetail': { 
         'category': 'flow 2 category', 
