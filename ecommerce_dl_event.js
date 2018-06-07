@@ -35,7 +35,7 @@ function ikea_pageflow_1(){
    window.dataLayer.push({
      'event': 'GA-event',
      'page': {
-      'name': flow 2
+      'name': 'flow 2'
      },
      'eventDetail': { 
         'category': 'flow 2 category', 
