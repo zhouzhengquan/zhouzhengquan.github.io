@@ -35,7 +35,7 @@ function ikea_pageflow_1(){
    window.dataLayer.push({
      'event': 'GA-event',
      'page': {
-      'name': ID_random
+      'name': flow 2
      },
      'eventDetail': { 
         'category': 'flow 2 category', 
@@ -43,7 +43,7 @@ function ikea_pageflow_1(){
         'label': 'flow 2 label'
       },
      'user': {
-       'id': '666'
+       'id': ID_random
      },
      'site': {
        'environment': 'live'
