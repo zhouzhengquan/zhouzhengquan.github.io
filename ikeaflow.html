@@ -6,13 +6,25 @@
     <script src="//assets.adobedtm.com/f876876910c5b99b1ecc6e45d02acfa5f8b6cb2f/satelliteLib-3aefd94135a5a250f7558729f47b2fb2508d0b35.js"></script>
 
   <script>
+    var chars = ['0','1','2','3','4','5','6','7','8','9'];
+
+function generateMixed(n) {
+     var res = "";
+     for(var i = 0; i < n ; i ++) {
+         var id = Math.ceil(Math.random()*9);
+         res += chars[id];
+     }
+     return res;
+}
+
+var ID_random = generateMixed(10); 
     window.dataLayer = window.dataLayer || [];
     dataLayer.push({
                 'page': {
                      'name': 'ikeaflow home'
                 },
                 'user': {
-                'id': '2123'
+                'id': ID_random
                 },
                 'site': {
                 'environment': 'live'
