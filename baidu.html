@@ -3,7 +3,7 @@
 <head>
     <script  src="mbox.js"></script>
     <script src="//assets.adobedtm.com/f876876910c5b99b1ecc6e45d02acfa5f8b6cb2f/satelliteLib-3aefd94135a5a250f7558729f47b2fb2508d0b35.js"></script>
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -29,7 +29,7 @@ function GetRequest() {
 var _hmt = _hmt || [];
 var utm = GetRequest();
 sourceValue = utm.utm_source;
-    if (utm.indexOf("utm_source") != -1) {
+    if (utm.indexOf("source") != -1) {
         _hmt.push(['_setPageTag', '4034', sourceValue]);
     }
 (function() {
