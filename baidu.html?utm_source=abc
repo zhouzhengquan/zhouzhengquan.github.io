@@ -14,6 +14,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <script>
 var _hmt = _hmt || [];
+var url = window.location.href;
+    if (url.indexOf("utm_source")>0){
+_hmt.push(['_setPageTag', '4034', 'abc']);
+    }
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?62dc67cdf9b683fbc816a615963ab7c9";
