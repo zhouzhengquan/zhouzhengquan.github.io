@@ -13,10 +13,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- End Google Tag Manager -->
 
 <script>
+function GetRequest() {
+    var url = location.search; //获取url中"?"符后的字串
+    var theRequest = new Object();
+    if (url.indexOf("?") != -1) {
+        var str = url.substr(1);
+        strs = str.split("&");
+        for(var i = 0; i < strs.length; i ++) {
+            theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+        }
+    }
+    return theRequest;
+}
+
 var _hmt = _hmt || [];
-var url = window.location.href;
+var url = GetRequest();
+sourceValue = url.utm_source;
     if (url.indexOf("utm_source")>0){
-_hmt.push(['_setPageTag', '4034', 'abc']);
+_hmt.push(['_setPageTag', '4034', sourceValue]);
     }
 (function() {
   var hm = document.createElement("script");
