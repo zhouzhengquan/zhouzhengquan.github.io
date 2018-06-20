@@ -29,6 +29,7 @@ function GetRequest() {
 var _hmt = _hmt || [];
  var utm  = new Object();
 utm = GetRequest();
+   utmSreing = JSON.stringify(utm);
 sourceValue = utm.utm_source;
     if (utm.indexOf("source") != -1) {
         _hmt.push(['_setPageTag', '4034', sourceValue]);
