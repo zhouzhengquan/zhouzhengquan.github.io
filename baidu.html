@@ -36,14 +36,53 @@ function GetRequest() {
     return theRequest;
 }
     
-var _hmt = _hmt || [];
+var _hmt = _hmt || [];//source
     utm = GetRequest();
     utmString = JSON.stringify(utm);
     sourceValue = utmString.utm_source;
     if (utmString.indexOf("source") != -1) {
        _hmt.push(['_setPageTag', '4035', utm.utm_source]); 
     }
-        
+    
+var _hmt = _hmt || [];//medium
+    utm = GetRequest();
+    utmString = JSON.stringify(utm);
+    sourceValue = utmString.utm_source;
+    if (utmString.indexOf("source") != -1) {
+       _hmt.push(['_setPageTag', '5198', utm.utm_medium]); 
+    }  
+    
+var _hmt = _hmt || [];//campaign
+    utm = GetRequest();
+    utmString = JSON.stringify(utm);
+    sourceValue = utmString.utm_source;
+    if (utmString.indexOf("source") != -1) {
+       _hmt.push(['_setPageTag', '5199', utm.utm_campaign]); 
+    }  
+    
+    var _hmt = _hmt || [];//content
+    utm = GetRequest();
+    utmString = JSON.stringify(utm);
+    sourceValue = utmString.utm_source;
+    if (utmString.indexOf("source") != -1) {
+       _hmt.push(['_setPageTag', '5200', utm.utm_content]); 
+    } 
+    
+    var _hmt = _hmt || [];//term
+    utm = GetRequest();
+    utmString = JSON.stringify(utm);
+    sourceValue = utmString.utm_source;
+    if (utmString.indexOf("source") != -1) {
+       _hmt.push(['_setPageTag', '5201', utm.utm_campaign]); 
+    } 
+    
+    var _hmt = _hmt || [];//location
+    utm = GetRequest();
+    utmString = JSON.stringify(utm);
+    sourceValue = utmString.utm_source;
+    if (utmString.indexOf("source") != -1) {
+       _hmt.push(['_setPageTag', '5202', utm.utm_location]); 
+    } 
 (function() {
   var hm = document.createElement("script");
   hm.src = "https://hm.baidu.com/hm.js?62dc67cdf9b683fbc816a615963ab7c9";
