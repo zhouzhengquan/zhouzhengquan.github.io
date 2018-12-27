@@ -1,0 +1,89 @@
+<html>  
+<head>
+  <script src="dl_event.js"></script>
+  <script src="//assets.adobedtm.com/launch-ENc222f06a261b442091a8043c19ea5139.min.js" async></script>  
+
+</head>
+<script>  
+    var i=1;  
+</script>  
+ <body>
+
+  <style type="text/css">
+    div {
+      margin: 50px 0px;
+      font-size: 30px;
+      color: #B16A68;
+      text-align:center; 
+    }
+
+    .example_table {
+      margin: 0px 150px;
+      min-width: 800px;
+      border: 1px solid #E6BDBD; 
+    }
+    .example_table, .example_table tr{
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #E6BDBD;
+    }
+    .example_table td, .example_table th {
+      padding: 5px 10px;
+      font-size: 12px;
+      font-family: Verdana;
+      color: #B16A68;
+     /* width: 15%;*/
+      height: 45px;
+      font-size: 15px;
+      text-align:center;
+    }
+    .example_table tr:nth-child(even) {
+      background: #EED3D2;
+      font-color:#FFF;
+    }
+    .example_table tr:nth-child(odd) {
+      background: #FFF;
+    }
+    .example_table button {
+      border-radius: 4px;
+      border: 1px solid transparent;
+      color: #B16A68;
+      background-color: #fff;
+      border-color: #ccc;
+      cursor:pointer;
+    }
+    .example_table tr:nth-child(odd) button {
+      background-color: #B16A68;
+      color: fff;
+    }
+  </style>
+
+  <div>
+    <p>PUMA - Tagging Test</p>
+  </div>
+
+  <table class="example_table">
+   <tr>
+      <th>No.</th>
+      <th>EventName</th>
+      <th>Category</th>
+      <th>Action</th>
+      <th style="width:10%;">Label</th>
+      <th>Batch</th>
+      <th>Check</th>
+    </tr>
+ <l:iterate><!-- ergodic data set and generate row number-->  
+    </tr>
+    <tr>
+      <td><script>document.write(i);i++</script></td>  
+      <td>DCR - Global Pageview</td>
+      <td>global</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td><button onclick="ga_wse_tracking.product_view_impression()">click</button></td>
+    </tr>
+    
+    </l:iterate>  
+  </table>
+</body>
