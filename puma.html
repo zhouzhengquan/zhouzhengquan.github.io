@@ -1,0 +1,89 @@
+<html>  
+<head>
+  <script src="dl_event.js"></script>
+  <script src="//assets.adobedtm.com/launch-ENc222f06a261b442091a8043c19ea5139.min.js" async></script>  
+</head>
+<script>  
+    var i=1;  
+var pageData = {"event":[],"categoryRefinements":[],"customer":{"ID":"abpbdCAXpuNPkWKqSxN3hhyH0F","anonymous":"true","authenticated":"false","registered":"false","localeCountry":"US","localLanguage":"en","location":{"ipAddress":"174.34.215.61","city":"Sacramento","country":"United States","postalCode":"95864","region":"California"},"sessionID":"39d9f06b39513d6e793d6be991ec4fa9193f3807d0abf4c817279193553f4a469bf575f69b7a94b5c4b64e0fecda2d559fd7273b47fa99d746fe4f077908914f","currency":"USD","gender":""},"navigation":{"environment":"prod","releaseVersion":"18.25.0","subSection1":"","subSection2":"","subSection3":"","subSection4":"","contentTitle":"PUMA.com | Forever Faster.","localeCountry":"US","localLanguage":"en","currency":"USD","customer":{"ID":"abpbdCAXpuNPkWKqSxN3hhyH0F","anonymous":"true","authenticated":"false","registered":"false","localeCountry":"US","localLanguage":"en","location":{"ipAddress":"174.34.215.61","city":"Sacramento","country":"United States","postalCode":"95864","region":"California"},"sessionID":"39d9f06b39513d6e793d6be991ec4fa9193f3807d0abf4c817279193553f4a469bf575f69b7a94b5c4b64e0fecda2d559fd7273b47fa99d746fe4f077908914f","currency":"USD","gender":""},"pageType":"home","site":"US Shop","uniquePageID":"home","breadcrumbs":"home"},"cart":{"product":[]}};
+</script>  
+ <body>
+
+  <style type="text/css">
+    div {
+      margin: 50px 0px;
+      font-size: 30px;
+      color: #B16A68;
+      text-align:center; 
+    }
+
+    .example_table {
+      margin: 0px 150px;
+      min-width: 800px;
+      border: 1px solid #E6BDBD; 
+    }
+    .example_table, .example_table tr{
+      border-bottom-width: 1px;
+      border-bottom-style: solid;
+      border-bottom-color: #E6BDBD;
+    }
+    .example_table td, .example_table th {
+      padding: 5px 10px;
+      font-size: 12px;
+      font-family: Verdana;
+      color: #B16A68;
+     /* width: 15%;*/
+      height: 45px;
+      font-size: 15px;
+      text-align:center;
+    }
+    .example_table tr:nth-child(even) {
+      background: #EED3D2;
+      font-color:#FFF;
+    }
+    .example_table tr:nth-child(odd) {
+      background: #FFF;
+    }
+    .example_table button {
+      border-radius: 4px;
+      border: 1px solid transparent;
+      color: #B16A68;
+      background-color: #fff;
+      border-color: #ccc;
+      cursor:pointer;
+    }
+    .example_table tr:nth-child(odd) button {
+      background-color: #B16A68;
+      color: fff;
+    }
+  </style>
+
+  <div>
+    <p>PUMA - Tagging Test</p>
+  </div>
+
+  <table class="example_table">
+   <tr>
+      <th>No.</th>
+      <th>EventName</th>
+      <th>Category</th>
+      <th>Action</th>
+      <th style="width:10%;">Label</th>
+      <th>Batch</th>
+      <th>Check</th>
+    </tr>
+ <l:iterate><!-- ergodic data set and generate row number-->  
+    </tr>
+    <tr>
+      <td><script>document.write(i);i++</script></td>  
+      <td>DCR - Global Pageview</td>
+      <td>global</td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td><button onclick="aa_puma_tracking.global_pageview()">click</button></td>
+    </tr>
+    
+    </l:iterate>  
+  </table>
+</body>
