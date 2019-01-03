@@ -1,95 +1,113 @@
 <html>  
-<head>
-  <script src="dl_event.js"></script>
-  <script src="//assets.adobedtm.com/launch-ENc222f06a261b442091a8043c19ea5139.min.js" async></script>
-  </head>
-<script>  
-    var i=1;  
-var pageData = {"event":[],"categoryRefinements":[],"customer":{"ID":"abpbdCAXpuNPkWKqSxN3hhyH0F","anonymous":"true","authenticated":"false","registered":"false","localeCountry":"US","localLanguage":"en","location":{"ipAddress":"174.34.215.61","city":"Sacramento","country":"United States","postalCode":"95864","region":"California"},"sessionID":"39d9f06b39513d6e793d6be991ec4fa9193f3807d0abf4c817279193553f4a469bf575f69b7a94b5c4b64e0fecda2d559fd7273b47fa99d746fe4f077908914f","currency":"USD","gender":""},"navigation":{"environment":"prod","releaseVersion":"18.25.0","subSection1":"page view","subSection2":"","subSection3":"","subSection4":"","contentTitle":"PUMA.com | Forever Faster.","localeCountry":"US","localLanguage":"en","currency":"USD","customer":{"ID":"abpbdCAXpuNPkWKqSxN3hhyH0F","anonymous":"true","authenticated":"false","registered":"false","localeCountry":"US","localLanguage":"en","location":{"ipAddress":"174.34.215.61","city":"Sacramento","country":"United States","postalCode":"95864","region":"California"},"sessionID":"39d9f06b39513d6e793d6be991ec4fa9193f3807d0abf4c817279193553f4a469bf575f69b7a94b5c4b64e0fecda2d559fd7273b47fa99d746fe4f077908914f","currency":"USD","gender":""},"pageType":"home","site":"US Shop","uniquePageID":"home","breadcrumbs":"home"},"cart":{"product":[]}};
-</script>  
- <body>
-
-  <style type="text/css">
-    div {
-      margin: 50px 0px;
-      font-size: 30px;
-      color: #B16A68;
-      text-align:center; 
-    }
-
-    .example_table {
-      margin: 0px 150px;
-      min-width: 800px;
-      border: 1px solid #E6BDBD; 
-    }
-    .example_table, .example_table tr{
-      border-bottom-width: 1px;
-      border-bottom-style: solid;
-      border-bottom-color: #E6BDBD;
-    }
-    .example_table td, .example_table th {
-      padding: 5px 10px;
-      font-size: 12px;
-      font-family: Verdana;
-      color: #B16A68;
-     /* width: 15%;*/
-      height: 45px;
-      font-size: 15px;
-      text-align:center;
-    }
-    .example_table tr:nth-child(even) {
-      background: #EED3D2;
-      font-color:#FFF;
-    }
-    .example_table tr:nth-child(odd) {
-      background: #FFF;
-    }
-    .example_table button {
-      border-radius: 4px;
-      border: 1px solid transparent;
-      color: #B16A68;
-      background-color: #fff;
-      border-color: #ccc;
-      cursor:pointer;
-    }
-    .example_table tr:nth-child(odd) button {
-      background-color: #B16A68;
-      color: fff;
-    }
-  </style>
-
-  <div>
-    <p>PUMA - Tagging Test</p>
-  </div>
-
-  <table class="example_table">
-   <tr>
-      <th>No.</th>
-      <th>EventName</th>
-      <th>Category</th>
-      <th>Action</th>
-      <th style="width:10%;">Label</th>
-      <th>Batch</th>
-      <th>Check</th>
-    </tr>
- <l:iterate><!-- ergodic data set and generate row number-->  
-    </tr>
-    <tr>
-      <td><script>document.write(i);i++</script></td>  
-      <td>DCR - Global Pageview</td>
-      <td>global</td>
-      <td></td>
-      <td></td>
-      <td>1</td>
-      <td><button onclick="aa_puma_tracking.global_pageview()">click</button></td>
-    </tr>
-    <a onClick="s_objectID='1';" href=https://zhouzhengquan.github.io/pumaPDP.html>立即选购</a>
-      <br>
-    <a onClick="s_objectID='2';" href=https://zhouzhengquan.github.io/pumaRefine.html>立即选购</a>
-      <br>
-    <a onClick="s_objectID='3';" target="_blank" href=https://zhouzhengquan.github.io/pumaSearch.html>立即选购</a>
-        <br>
-    <a onClick="s_objectID='4';" target="_blank" href=https://zhouzhengquan.github.io/puma.html>立即选购</a> 
-    </l:iterate>  
-  </table>
-</body>
+    <head>
+      <script src="dl_event.js"></script>
+      <script src="//assets.adobedtm.com/launch-ENc222f06a261b442091a8043c19ea5139.min.js" async></script>
+      </head>
+    <script>  
+        var i=1;  
+    var pageData = {"event":[],"categoryRefinements":[],"customer":{"ID":"abpbdCAXpuNPkWKqSxN3hhyH0F","anonymous":"true","authenticated":"false","registered":"false","localeCountry":"US","localLanguage":"en","location":{"ipAddress":"174.34.215.61","city":"Sacramento","country":"United States","postalCode":"95864","region":"California"},"sessionID":"39d9f06b39513d6e793d6be991ec4fa9193f3807d0abf4c817279193553f4a469bf575f69b7a94b5c4b64e0fecda2d559fd7273b47fa99d746fe4f077908914f","currency":"USD","gender":""},"navigation":{"environment":"prod","releaseVersion":"18.25.0","subSection1":"page view","subSection2":"","subSection3":"","subSection4":"","contentTitle":"PUMA.com | Forever Faster.","localeCountry":"US","localLanguage":"en","currency":"USD","customer":{"ID":"abpbdCAXpuNPkWKqSxN3hhyH0F","anonymous":"true","authenticated":"false","registered":"false","localeCountry":"US","localLanguage":"en","location":{"ipAddress":"174.34.215.61","city":"Sacramento","country":"United States","postalCode":"95864","region":"California"},"sessionID":"39d9f06b39513d6e793d6be991ec4fa9193f3807d0abf4c817279193553f4a469bf575f69b7a94b5c4b64e0fecda2d559fd7273b47fa99d746fe4f077908914f","currency":"USD","gender":""},"pageType":"home","site":"US Shop","uniquePageID":"home","breadcrumbs":"home"},"cart":{"product":[]}};
+    </script>  
+     <body>
+        <section id="top_ad"><div class="clp-message-bar graystyle"><div id="ad" class="mobile-explore ad" data-v-3ad8ac41=""><div class="swiper-container swiper-container-horizontal" data-v-3ad8ac41=""><div class="swiper-wrapper" data-v-3ad8ac41="" style="transition-duration: 0ms; transform: translate3d(-1678px, 0px, 0px);"><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-v-3ad8ac41="" data-swiper-slide-index="1" style="width: 839px;"><h2 data-v-3ad8ac41="">
+            12月14日至1月10日繽紛冬日特惠，全場商品5折起，每滿600立減100，滿600贈布袋一個。
+            <a onClick="s_objectID='top_ad-buy_now-1';" href="https://hk.puma.com/all/featured/xmassale" data-v-3ad8ac41="">立即選購</a>
+            &nbsp;&nbsp;
+            <!----></h2></div><div class="swiper-slide swiper-slide-prev swiper-slide-duplicate-next" data-v-3ad8ac41="" data-swiper-slide-index="0" style="width: 839px;"><h2 data-v-3ad8ac41="">
+            歡迎來到PUMA官方網上商店，即日起任意購物即可享免運費優惠。
+            <a onClick="s_objectID='top_ad-buy_now-2';" href="https://hk.puma.com/shopall.html" data-v-3ad8ac41="">立即選購</a>
+            &nbsp;&nbsp;
+            <!----></h2></div><div class="swiper-slide swiper-slide-active" data-v-3ad8ac41="" data-swiper-slide-index="1" style="width: 839px;"><h2 data-v-3ad8ac41="">
+            12月14日至1月10日繽紛冬日特惠，全場商品5折起，每滿600立減100，滿600贈布袋一個。
+            <a onClick="s_objectID='top_ad-buy_now-3';" href="https://hk.puma.com/all/featured/xmassale" data-v-3ad8ac41="">立即選購</a>
+            &nbsp;&nbsp;
+            <!----></h2></div><div class="swiper-slide swiper-slide-duplicate swiper-slide-next swiper-slide-duplicate-prev" data-v-3ad8ac41="" data-swiper-slide-index="0" style="width: 839px;"><h2 data-v-3ad8ac41="">
+            歡迎來到PUMA官方網上商店，即日起任意購物即可享免運費優惠。
+            <a onClick="s_objectID='top_ad-buy_now-4';" href="https://hk.puma.com/shopall.html" data-v-3ad8ac41="">立即選購</a>
+            &nbsp;&nbsp;
+            <!----></h2></div></div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div><!----></div><div class="btn-nav"><div class="prev"  onClick="s_objectID='top_ad-prev-5';"><i class="iconfont icon-arr-blk-left-1 gray"></i></div><div class="next"  onClick="s_objectID='top_ad-prev-5';" ><i class="iconfont icon-arr-blk-rht-1 gray"></i></div></div></div></section>
+      <style type="text/css">
+        div {
+          margin: 50px 0px;
+          font-size: 30px;
+          color: #B16A68;
+          text-align:center; 
+        }
+    
+        .example_table {
+          margin: 0px 150px;
+          min-width: 800px;
+          border: 1px solid #E6BDBD; 
+        }
+        .example_table, .example_table tr{
+          border-bottom-width: 1px;
+          border-bottom-style: solid;
+          border-bottom-color: #E6BDBD;
+        }
+        .example_table td, .example_table th {
+          padding: 5px 10px;
+          font-size: 12px;
+          font-family: Verdana;
+          color: #B16A68;
+         /* width: 15%;*/
+          height: 45px;
+          font-size: 15px;
+          text-align:center;
+        }
+        .example_table tr:nth-child(even) {
+          background: #EED3D2;
+          font-color:#FFF;
+        }
+        .example_table tr:nth-child(odd) {
+          background: #FFF;
+        }
+        .example_table button {
+          border-radius: 4px;
+          border: 1px solid transparent;
+          color: #B16A68;
+          background-color: #fff;
+          border-color: #ccc;
+          cursor:pointer;
+        }
+        .example_table tr:nth-child(odd) button {
+          background-color: #B16A68;
+          color: fff;
+        }
+      </style>
+    
+      <div>
+        <p>PUMA - Tagging Test</p>
+      </div>
+    
+      <table class="example_table">
+       <tr>
+          <th>No.</th>
+          <th>EventName</th>
+          <th>Category</th>
+          <th>Action</th>
+          <th style="width:10%;">Label</th>
+          <th>Batch</th>
+          <th>Check</th>
+        </tr>
+     <l:iterate><!-- ergodic data set and generate row number-->  
+        </tr>
+        <tr>
+          <td><script>document.write(i);i++</script></td>  
+          <td>DCR - Global Pageview</td>
+          <td>global</td>
+          <td></td>
+          <td></td>
+          <td>1</td>
+          <td><button onclick="aa_puma_tracking.global_pageview()">click</button></td>
+        </tr>
+        <a onClick="s_objectID='1';" href=https://zhouzhengquan.github.io/pumaPDP.html>立即选购</a>
+          <br>
+        <a onClick="s_objectID='2';" href=https://zhouzhengquan.github.io/pumaRefine.html>立即选购</a>
+          <br>
+        <a onClick="s_objectID='3';" target="_blank" href=https://zhouzhengquan.github.io/pumaSearch.html>立即选购</a>
+            <br>
+        <a onClick="s_objectID='4';" target="_blank" href=https://zhouzhengquan.github.io/puma.html>立即选购</a> 
+        </l:iterate>  
+      </table>
+    </body>
+    
+    
